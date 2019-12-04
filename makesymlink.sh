@@ -9,7 +9,7 @@ for file in $files; do
     if [ $filename == "." ] \
         || [ $filename == ".." ] \
         || [ $filename == ".DS_Store" ] \
-        || [ $filename == ".git" ]; then
+        || [ $filename == ".git" ] \
         || [ $filename == ".gitignore" ]; then
         continue
     fi
