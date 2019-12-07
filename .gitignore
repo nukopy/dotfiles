@@ -1,3 +1,6 @@
+# general
+.DS_Store
+
 # tmp
 .bashrc
 .bash_profile
