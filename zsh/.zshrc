@@ -21,7 +21,7 @@ alias .....="cd ../../../.."
 # Docker aliases
 ## common
 alias docker_daemon='open --background -a Docker'
-alias dc="docker"
+alias dcr="docker"
 alias dcm="docker-compose"
 
 ## pull
@@ -53,7 +53,7 @@ alias drm="docker container rm"  # rm container
 alias drmi="docker image rm"  # rm image
 
 ## helper
-alias dcalias="cat ~/.bashrc | grep docker"
+alias dcalias="cat $ZDOTDIR/.zshrc | grep docker"
 
 # for AtCoder's OnlineJudgeTool
 alias rmt="rm -rf test"
