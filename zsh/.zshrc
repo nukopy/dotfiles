@@ -53,7 +53,7 @@ alias drm="docker container rm"  # rm container
 alias drmi="docker image rm"  # rm image
 
 ## helper
-alias dcalias="cat ~/.bashrc | grep docker"
+alias dcalias="cat ~/$ZDOTDIR/.zshrc | grep docker"
 
 # for AtCoder's OnlineJudgeTool
 alias rmt="rm -rf test"
