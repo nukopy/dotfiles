@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DIR_DOTFILES="$HOME/dotfiles"
-files=`ls -d $DIR_DOTFILES/.*  $DIR_DOTFILES/**/.* | uniq`
+DIR_DOTFILES="$HOME/Projects/dotfiles"
+files=$(ls -d $DIR_DOTFILES/.*  $DIR_DOTFILES/**/.* | uniq)
 
 for file in $files; do
     filename=`basename $file`
