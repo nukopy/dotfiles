@@ -3,6 +3,21 @@
 DIR_DOTFILES="$HOME/Projects/dotfiles"
 files=$(ls -d $DIR_DOTFILES/.*  $DIR_DOTFILES/**/.* | uniq)
 
+unlink_create_symlink () {
+    file=$1
+    filename=$2
+    
+    echo "---------- Unlink & Creating symlink ----------"
+    
+    echo "Unlink symlink ~/$filename"
+    unlink ~/$filename
+    
+    echo "Creating symlink FROM $file TO ~/$filename"
+    ln -s $file ~/$filename
+    
+    echo ""
+}
+
 for file in $files; do
     filename=`basename $file`
     
@@ -14,6 +29,5 @@ for file in $files; do
         continue
     fi
     
-    echo "Creating symlink to $file in home directory"
-    ln -s $DIR_DOTFILES/$filename ~/$filename
+    unlink_create_symlink $file $filename
 done
