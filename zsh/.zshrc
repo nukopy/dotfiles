@@ -21,7 +21,7 @@ alias .....="cd ../../../.."
 # Docker aliases
 ## common
 alias docker_daemon='open --background -a Docker'
-alias dc="docker"
+alias dcr="docker"
 alias dcm="docker-compose"
 
 ## pull
