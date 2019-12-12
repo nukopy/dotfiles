@@ -47,10 +47,18 @@ alias drunit="docker container run --rm -it"  # interactive and virtual terminal
 alias drund="docker container run -d"  # detouch: execute as background process
 alias dstr="docker container start"
 alias dstp="docker container stop"
+## enter running container
+# dcin($1): docker container exec -it $1 /bin/bash
+dcin () {
+    # $1: [CONTAINER-ID] or [CONTAINER-NAME]
+    docker container exec -it $1 /bin/bash
+}
 
 ## remove
 alias drm="docker container rm"  # rm container
 alias drmi="docker image rm"  # rm image
+# When new image use an exisisting tag, old image's tag become "<none>"
+alias drminone="docker rmi $(docker images -f "dangling=true" -q)"
 
 ## helper
 alias dcalias="cat ~/$ZDOTDIR/.zshrc | grep docker"
