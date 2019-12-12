@@ -35,7 +35,12 @@ alias -g gr="| grep --color"  # add pipe option: ex) $ la gr "py"
 alias restart="exec $SHELL -l"
 
 ## utility
+# general
 alias path="echo $PATH"
+
+# for AtCoder
+alias rmt="rm -rf test"
+alias ojt="oj test -c"  # for OnlineJudgeTool
 
 ###### Docker aliases #####
 ## common
@@ -81,7 +86,3 @@ alias drminone="docker rmi $(docker images -f "dangling=true" -q)"
 
 ## helper
 alias dcalias="cat ~/$ZDOTDIR/.zshrc | grep docker"
-
-# for AtCoder's OnlineJudgeTool
-alias rmt="rm -rf test"
-alias ojt="oj test -c"
