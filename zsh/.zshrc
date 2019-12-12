@@ -13,9 +13,10 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 # Aliases
 ######################
 
-# Filesystem aliases
-alias ..='cd ..'
-alias ...='cd ../..'
+##### Filesystem aliases #####
+## cd
+alias ..="cd .."
+alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
