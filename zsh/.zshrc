@@ -1,10 +1,11 @@
 ######################
 # add to PATH
 ######################
-# Homebrew
+
+# for Homebrew
 export PATH="/usr/local/sbin:$PATH"
 
-# anyenv
+# for anyenv
 eval "$(anyenv init -)"
 export PATH="$HOME/.anyenv/bin:$PATH"
 
