@@ -46,7 +46,6 @@ alias ojt="oj test -c"  # for OnlineJudgeTool
 ## common
 alias docker_daemon='open --background -a Docker'
 alias dcr="docker"
-alias dcm="docker-compose"
 
 ## pull
 alias dp="docker pull"
@@ -86,3 +85,15 @@ alias drminone="docker rmi $(docker images -f "dangling=true" -q)"
 
 ## helper
 alias dcalias="cat ~/$ZDOTDIR/.zshrc | grep docker"
+
+###### Docker Compose #####
+## common
+alias dcm="docker-compose"
+
+## up
+alias dcup="docker-compose up"  # display log
+alias dcupd="docker-compose up --detach"  # run container in the background(no display log)
+
+## build
+alias dcb="docker-compose build"
+alias dcbn="docker-compose build --no-cache"
