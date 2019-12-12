@@ -36,7 +36,7 @@ alias restart="exec $SHELL -l"
 ## utility
 alias path="echo $PATH"
 
-# Docker aliases
+###### Docker aliases #####
 ## common
 alias docker_daemon='open --background -a Docker'
 alias dcr="docker"
