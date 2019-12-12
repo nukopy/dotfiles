@@ -24,7 +24,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cdp="cd ~/Projects"
-alias cpa="cd ~/Projects/MyProjects/AtCoderStream"
+alias cda="cd ~/Projects/MyProjects/AtCoderStream"
+alias cdd="cd ~/Projects/dotfiles"
 
 ## grep
 # alias gr="grep --color"
