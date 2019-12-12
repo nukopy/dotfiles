@@ -14,11 +14,27 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 ######################
 
 ##### Filesystem aliases #####
+## ls
+alias la="ls -l -a -G"  # -G is a color option on only macOS
+# alias la="ls -l -a --color=auto"  # a color option on Linux
+
 ## cd
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias cdp="cd ~/Projects"
+alias cpa="cd ~/Projects/MyProjects/AtCoderStream"
+
+## grep
+# alias gr="grep --color"
+alias -g gr="| grep --color"  # add pipe option: ex) $ la gr "py"
+
+## exec
+alias restart="exec $SHELL -l"
+
+## utility
+alias path="echo $PATH"
 
 # Docker aliases
 ## common
