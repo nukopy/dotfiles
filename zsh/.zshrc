@@ -13,7 +13,7 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 # Aliases
 ######################
 
-##### Filesystem aliases #####
+##### Filesystem #####
 ## ls
 alias la="ls -l -a -G"  # -G is a color option on only macOS
 # alias la="ls -l -a --color=auto"  # a color option on Linux
@@ -42,7 +42,7 @@ alias path="echo $PATH"
 alias rmt="rm -rf test"
 alias ojt="oj test -c"  # for OnlineJudgeTool
 
-###### Docker aliases #####
+###### Docker #####
 ## common
 alias docker_daemon='open --background -a Docker'
 alias dcr="docker"
