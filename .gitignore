@@ -1,6 +1,6 @@
 # general
 .DS_Store
 
-# tmp
-.bash_profile
+# zsh
 .zsh_history
+.zshenv.secret

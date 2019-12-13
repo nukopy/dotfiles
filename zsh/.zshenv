@@ -11,3 +11,16 @@ export PYTHONPATH="${PYTHONPATH}:/Users/pyteyon/Projects/MyProjects/AtCoderStrea
 ## pipenv
 # create ".venv" dir when "pipenv init"
 export PIPENV_VENV_IN_PROJECT=true
+
+######################
+# secret keys
+######################
+# read secret environment variables
+sh $ZDOTDIR/zsh/.zshenv.secret
+
+######################
+# others
+######################
+
+## serverless framework
+# export SLS_DUBUG=*
