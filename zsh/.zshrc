@@ -1,3 +1,4 @@
+echo "Running $ZDOTDIR/.zshrc ..."
 ######################
 # add to PATH
 ######################
