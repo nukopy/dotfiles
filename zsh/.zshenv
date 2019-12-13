@@ -16,7 +16,7 @@ export PIPENV_VENV_IN_PROJECT=true
 # secret keys
 ######################
 # read secret environment variables
-sh $ZDOTDIR/zsh/.zshenv.secret
+source $ZDOTDIR/.zshenv.secret
 
 ######################
 # others
