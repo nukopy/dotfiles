@@ -97,3 +97,7 @@ alias dcupd="docker-compose up --detach"  # run container in the background(no d
 ## build
 alias dcb="docker-compose build"
 alias dcbn="docker-compose build --no-cache"
+
+##### starship(for shell customize) #####
+# https://starship.rs/ja-JP/
+eval "$(starship init zsh)"
