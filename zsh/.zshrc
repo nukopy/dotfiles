@@ -103,3 +103,7 @@ alias dcbn="docker-compose build --no-cache"
 # https://starship.rs/ja-JP/
 eval "$(starship init zsh)"
 
+##### Python #####
+## jupyter notebook
+alias py='ipython'
+alias jn='ipython notebook --ip=127.0.0.1'
