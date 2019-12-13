@@ -1,0 +1,4 @@
+# This file is "symlink"ed to home directory.
+ZDOTDIR=$HOME/Projects/dotfiles/zsh
+
+source $ZDOTDIR/.zshenv

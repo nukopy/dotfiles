@@ -5,7 +5,7 @@ My dotfiles repository on OS X(macOS) to get my work environment ready in just a
 ```bash
 $ git clone http://github.com/nukopy/dotfiles.git
 $ cd dotfiles
-$ sh makesymlink.sh
+$ source makesymlink.sh
 ```
 
 ## Management Targets
