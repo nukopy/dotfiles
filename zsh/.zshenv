@@ -1,4 +1,4 @@
-echo "Running $ZDOTDIR/.zshenv ..."
+echo "Running $ZDOTDIR/zsh/.zshenv ..."
 
 ######################
 # Python

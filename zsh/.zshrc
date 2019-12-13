@@ -102,3 +102,4 @@ alias dcbn="docker-compose build --no-cache"
 ##### starship(for shell customize) #####
 # https://starship.rs/ja-JP/
 eval "$(starship init zsh)"
+
