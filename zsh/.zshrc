@@ -83,7 +83,7 @@ dcin () {
 alias drm="docker container rm"  # rm container
 alias drmi="docker image rm"  # rm image
 # When new image use an exisisting tag, old image's tag become "<none>"
-alias drminone="docker rmi $(docker images -f "dangling=true" -q)"
+alias drmia="docker system prune"  # clean <none>:<none>
 
 ## helper
 alias dcalias="cat $ZDOTDIR/.zshrc gr docker"  # use "gr"(grep with color)
