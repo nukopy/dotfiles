@@ -86,7 +86,7 @@ alias drmi="docker image rm"  # rm image
 alias drminone="docker rmi $(docker images -f "dangling=true" -q)"
 
 ## helper
-alias dcalias="cat ~/$ZDOTDIR/.zshrc | grep docker"
+alias dcalias="cat $ZDOTDIR/.zshrc gr docker"  # use "gr"(grep with color)
 
 ###### Docker Compose #####
 ## common
