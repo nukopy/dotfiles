@@ -37,10 +37,10 @@ alias -g gr="| grep --color"  # add pipe option: ex) $ la gr "py"
 alias restart="exec $SHELL -l"
 
 ## utility
-# general
+### general
 alias path="echo $PATH"
 
-# for AtCoder
+### for AtCoder
 alias rmt="rm -rf test"
 alias ojt="oj test -c"  # for OnlineJudgeTool
 
