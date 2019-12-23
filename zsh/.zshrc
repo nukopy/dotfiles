@@ -44,6 +44,9 @@ alias path="echo $PATH"
 alias rmt="rm -rf test"
 alias ojt="oj test -c"  # for OnlineJudgeTool
 
+### for MeCab
+alias mecab-neologd="mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd"
+
 ###### Docker #####
 ## common
 alias docker_daemon='open --background -a Docker'
