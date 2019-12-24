@@ -79,7 +79,6 @@ alias drund="docker container run -d"  # detouch: execute as background process
 alias dstr="docker container start"
 alias dstp="docker container stop"
 ## enter running container
-# dcin($1): docker container exec -it $1 /bin/bash
 dcin () {
     # $1: [CONTAINER-ID] or [CONTAINER-NAME]
     docker container exec -it $1 /bin/bash
