@@ -41,7 +41,7 @@ alias restart="exec $SHELL -l"
 alias path="echo $PATH"
 
 ### for applications
-alias cal="open 'Applications/Chrome Apps.localized/Google Calendar.app'"
+alias cal="open /Users/pyteyon/Applications/Chrome\\ Apps.localized/Google\\ Calendar.app"
 
 ### for AtCoder
 alias rmt="rm -rf test"
