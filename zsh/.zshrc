@@ -40,6 +40,9 @@ alias restart="exec $SHELL -l"
 ### general
 alias path="echo $PATH"
 
+### for applications
+alias cal="open 'Applications/Chrome Apps.localized/Google Calendar.app'"
+
 ### for AtCoder
 alias rmt="rm -rf test"
 alias ojt="oj test -c"  # for OnlineJudgeTool
