@@ -1,4 +1,8 @@
-My dotfiles repository on OS X(macOS) to get my work environment ready in just a few moments.
+# nukopy's dotfiles repository
+
+Dotfiles repository for OSX(macOS) to get my work environment ready in just a few moments.
+
+This repository is inspired by [hiramekun/dotfiles](https://github.com/hiramekun/dotfiles).
 
 ## Start
 
