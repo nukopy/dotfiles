@@ -51,6 +51,10 @@ alias ojt="oj test -c"  # for OnlineJudgeTool
 ### for MeCab
 alias mecab-neologd="mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd"
 
+###### Git Command #####
+alias gpom="git push origin master"
+alias gst="git status"
+
 ###### Docker #####
 ## common
 alias docker_daemon='open --background -a Docker'
