@@ -42,6 +42,7 @@ alias path="echo $PATH"
 
 ### for applications
 alias cal="open /Users/pyteyon/Applications/Chrome\\ Apps.localized/Google\\ Calendar.app"
+alias st="open '/Applications/Sourcetree.app'"
 
 ### for AtCoder
 alias rmt="rm -rf test"
