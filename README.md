@@ -12,14 +12,25 @@ $ cd dotfiles
 $ source make_symlink.sh
 ```
 
-## Management Targets
+## Managed Dotfiles
 
-- bash
-  - `.bash_profile`
-  - `.bashrc`
+- zsh
+  - `.zshrc`
+  - `.zshenv`
+- karabiner(keybind settings)
+- latex
+  - `.latexmk`
+
+## Upcoming Managed Dotfiles
+
+The following items are upcoming managed dotfiles in this repository.
+
+- Homebrew
+  - `Brewfile`(manage packages installed `brew`/`brew cask`)
 - anyenv
   - pyenv
   - ndenv
 - Visual Studio Code settings
-- karabiner settings
-- install apps and packages by Homebrew
+  - keybindings
+  - extensions
+- AWS settings
