@@ -122,6 +122,9 @@ alias jn='ipython notebook --ip=127.0.0.1'
 ## pipenv
 alias penvreq='pipenv lock -r > requirements.txt'
 
+##### AtCoder #####
+alias rmt='rm -rf test'
+
 ##### Others #####
 
 xmas() {
