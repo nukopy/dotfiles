@@ -119,6 +119,9 @@ eval "$(starship init zsh)"
 alias py='ipython'
 alias jn='ipython notebook --ip=127.0.0.1'
 
+## pipenv
+alias penvreq='pipenv lock -r > requirements.txt'
+
 ##### Others #####
 
 xmas() {
