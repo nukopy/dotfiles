@@ -127,6 +127,8 @@ alias rmt='rm -rf test'
 
 ##### Others #####
 
+## for xmas
+alias xmas-dcr="docker run -it --rm lukaszlach/merry-christmas"
 xmas() {
     echo "                    ____________________________________"
     echo "               I___|___|___|___|___|__|____|___|__|_I"
