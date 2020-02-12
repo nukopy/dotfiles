@@ -25,9 +25,12 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cdp="cd ~/Projects"
-alias cda="cd ~/Projects/MyProjects/AtCoderStream"
 alias cdd="cd ~/Projects/dotfiles"
 alias cdt="cd ~/Projects/Intern/UNIPRO/tag_tool"
+alias cda="cd ~/Projects/MyProjects/AtCoderStream"
+alias cdab="cd ~/Projects/MyProjects/AtCoderStream/atcoder-stream-backend"
+alias cdablib="cd ~/Projects/MyProjects/AtCoderStream/atcoder-stream-backend/libraries/lib/lib"
+alias cdaf="cd ~/Projects/MyProjects/AtCoderStream/atcoder-stream-frontedn"
 
 ## grep
 # alias gr="grep --color"
