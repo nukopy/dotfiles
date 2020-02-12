@@ -37,7 +37,7 @@ alias cdaf="cd ~/Projects/MyProjects/AtCoderStream/atcoder-stream-frontedn"
 alias -g gr="| grep --color"  # add pipe option: ex) $ la gr "py"
 
 ## exec
-alias restart="exec $SHELL -l"
+alias rst="exec $SHELL -l"
 
 ## utility
 ### general
