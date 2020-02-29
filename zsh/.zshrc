@@ -94,7 +94,7 @@ dcin () {
 
 ## remove
 alias drm="docker container rm"  # rm container
-alias drmi="docker image rm"  # rm image
+alias drmi="docker rmi"  # rm image
 # When new image use an exisisting tag, old image's tag become "<none>"
 
 ## helper
