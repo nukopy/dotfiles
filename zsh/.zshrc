@@ -14,7 +14,7 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 # Aliases
 ######################
 
-##### Filesystem #####
+##### Basic commands #####
 ## ls
 alias la="ls -l -a -G"  # -G is a color option on only macOS
 # alias la="ls -l -a --color=auto"  # a color option on Linux
