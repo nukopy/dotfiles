@@ -2,3 +2,5 @@
 ZDOTDIR=$HOME/Projects/dotfiles/zsh
 
 source $ZDOTDIR/.zshenv
+source $ZDOTDIR/.zshenv.secret  # read secret environment variables
+

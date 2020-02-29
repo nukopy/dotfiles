@@ -13,12 +13,6 @@ export PYTHONPATH="${PYTHONPATH}:/Users/pyteyon/Projects/MyProjects/AtCoderStrea
 export PIPENV_VENV_IN_PROJECT=true
 
 ######################
-# secret keys
-######################
-# read secret environment variables
-source $ZDOTDIR/.zshenv.secret
-
-######################
 # others
 ######################
 
