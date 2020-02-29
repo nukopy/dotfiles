@@ -1,5 +1,3 @@
-echo "Running $ZDOTDIR/.zshenv ..."
-
 ######################
 # Python
 ######################
