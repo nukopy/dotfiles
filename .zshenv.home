@@ -1,6 +1,9 @@
 # This file is "symlink"ed to home directory.
 ZDOTDIR=$HOME/Projects/dotfiles/zsh
 
+# load .zshenv
 source $ZDOTDIR/.zshenv
 source $ZDOTDIR/.zshenv.secret  # read secret environment variables
 
+# load .zshrc
+# .zshrc is automatically loaded when shell starts
