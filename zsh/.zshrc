@@ -17,6 +17,9 @@ export PATH="/usr/local/sbin:$PATH"
 eval "$(anyenv init -)"
 export PATH="$HOME/.anyenv/bin:$PATH"
 
+# for poetry
+export PATH="$HOME/.poetry/bin:$PATH"
+
 ######################
 # Aliases
 ######################
