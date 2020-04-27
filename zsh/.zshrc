@@ -187,3 +187,15 @@ xmas() {
     echo ""
     echo "------------------------------------------------"
 }
+
+###########################
+# zsh command completion
+###########################
+
+# poetry settings (not for homebrew setup)
+fpath+=~/.zfunc
+
+# enable zsh command completion(TAB completion)
+# grep, git, man, cd, kill, apt-get, etc...
+autoload -Uz compinit
+compinit
