@@ -96,6 +96,7 @@ alias drunit="docker container run --rm -it"  # interactive and virtual terminal
 alias drund="docker container run -d"  # detouch: execute as background process
 alias dstr="docker container start"
 alias dstp="docker container stop"
+alias drstr="docker container restart"
 ## enter running container
 dcin () {
     # $1: [CONTAINER-ID] or [CONTAINER-NAME]
