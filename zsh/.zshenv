@@ -14,6 +14,10 @@ PYTHONPATH="${PYTHONPATH}:${APP_HOME}"
 # create ".venv" dir when "pipenv init"
 export PIPENV_VENV_IN_PROJECT=true
 
+## AirFlow
+export AIRFLOW_HOME=~/airflow
+export AIRFLOW_GPL_UNIDECODE=yes
+
 ######################
 # others
 ######################
