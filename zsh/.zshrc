@@ -192,6 +192,14 @@ xmas() {
 }
 
 ###########################
+# zsh command after alias settings
+###########################
+
+# direnv（MUST load `direnv` after alias settings）
+export EDITOR=code
+eval "$(direnv hook zsh)"
+
+###########################
 # zsh command completion
 ###########################
 
