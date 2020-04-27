@@ -1,0 +1,40 @@
+ALIASES_DIR=".direnv/aliases"
+
+: <<'#FUNCTION_DESCRIPTION'
+=== export_function ===
+第 1 引数：作成したいコマンド名
+コマンド名のファイルが実行権限付きで ALIASES_DIR のパス以下に作成される． 
+.envrc 内で export_function が呼び出されれば，
+このディレクトリ配下にいる間 ALIASES_DIR が環境変数 PATH に追加された状態になる．
+実行権限月ファイルは direnv が unload しても残り続け，
+再度 loading されたときにまた新たに関数が消去 & 作成される（関数を更新したときに更新が反映されるようにするため）
+
+=== clear_direnv_aliases ===
+$alias_dir を消去する．
+`.envrc` の先頭でこの関数を実行する必要がある．
+#FUNCTION_DESCRIPTION
+
+export_function() {
+  
+  # get argument
+  local name=$1
+  
+  # alias 用のディレクトリを作成し，パスに追加
+  local alias_dir=$PWD/${ALIASES_DIR}
+  mkdir -p "$alias_dir"
+  PATH_add "$alias_dir"
+  
+  # 実行権限付きファイルの作成
+  local target="$alias_dir/$name"
+  if declare -f "$name" >/dev/null; then
+    echo "#!/usr/bin/env bash" > "$target"
+    declare -f "$name" >> "$target" 2>/dev/null
+    echo "$name" '"$@"' >> "$target"
+    chmod +x "$target"
+  fi
+}
+
+clear_direnv_aliases() {
+  local alias_dir=$PWD/${ALIASES_DIR}
+  rm -rf $alias_dir/*
+}
