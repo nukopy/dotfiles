@@ -133,6 +133,9 @@ alias pip_uninstall_all='pip freeze | xargs pip uninstall -y'
 alias py='ipython'
 alias jn='ipython notebook --ip=127.0.0.1'
 
+## venv
+alias pyv='python -m venv venv'
+
 ## pipenv
 alias penvreq='pipenv lock -r > requirements.txt'
 
