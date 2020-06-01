@@ -135,6 +135,9 @@ alias pip_uninstall_all='pip freeze | xargs pip uninstall -y'
 alias ipy='ipython'
 alias jn='ipython notebook --ip=127.0.0.1'
 
+## jupyter lab
+alias jl='jupyter lab'
+
 ## venv
 alias pyv='python -m venv venv'
 
