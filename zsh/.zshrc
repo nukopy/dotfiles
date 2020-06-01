@@ -142,7 +142,7 @@ alias pyv='python -m venv venv'
 alias penvreq='pipenv lock -r > requirements.txt'
 
 ## poetry
-alias poetry-dev='poetry add --dev autopep8 ipython pytest'
+alias poetry-dev='poetry add --dev black flake8 pytest ipython jupyterlab'
 
 ##### AtCoder #####
 alias rmt='rm -rf test'
