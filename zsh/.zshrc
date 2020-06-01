@@ -41,6 +41,8 @@ alias cda="cd ~/Projects/MyProjects/AtCoderStream"
 alias cdab="cd ~/Projects/MyProjects/AtCoderStream/atcoder-stream-backend && pipenv shell"
 alias cdlib="cd ~/Projects/MyProjects/AtCoderStream/atcoder-stream-backend/libraries/lib/lib"
 alias cdaf="cd ~/Projects/MyProjects/AtCoderStream/atcoder-stream-fronted"
+alias cdlex="cd ~/Projects/InternProjects/JXPressCorp/task/task03_tvasahi_2020_0507_to_xxxx/tvasahi-lex"
+alias cdjx="cd ~/Projects/InternProjects/JXPressCorp/"
 
 ## grep
 # alias gr="grep --color"
