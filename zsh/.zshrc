@@ -143,6 +143,7 @@ alias penvreq='pipenv lock -r > requirements.txt'
 
 ## poetry
 alias poetry-dev='poetry add --dev black flake8 pytest ipython jupyterlab'
+alias poetry-req='poetry run pip freeze > ./requirements.txt'
 
 ##### AtCoder #####
 alias rmt='rm -rf test'
