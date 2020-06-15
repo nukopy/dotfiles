@@ -3,8 +3,9 @@
 ######################
 
 ## PYTHONPATH for import packages
+# AtCoder Stream
 export PYTHONPATH="/Users/pyteyon/Projects/MyProjects/AtCoderStream/atcoder-stream-backend/libraries/lib"
-export PYTHONPATH="${PYTHONPATH}:/Users/pyteyon/Projects/MyProjects/AtCoderStream/atcoder-stream-backend/libraries/twitterapi"
+PYTHONPATH="${PYTHONPATH}:/Users/pyteyon/Projects/MyProjects/AtCoderStream/atcoder-stream-backend/libraries/twitterapi"
 
 # jxpress
 APP_HOME='/Users/pyteyon/Projects/InternProjects/JXPressCorp/task/task01_20200420/cf/gcp-billing'
