@@ -143,7 +143,7 @@ alias pyv='python -m venv venv'
 
 ## start up project with venv, poetry
 alias start-pyproject="source $PYDOTDIR/bootstrap-pyproject.sh"
-alias clean-pyproject="rm -rf ./venv; rm ./pyproject.toml ./pyproject.lock;"
+alias clean-pyproject="rm -rf ./venv; rm ./pyproject.toml ./poetry.lock;"
 
 ## pipenv
 alias penvreq='pipenv lock -r > requirements.txt'
