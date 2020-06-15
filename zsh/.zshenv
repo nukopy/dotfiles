@@ -2,6 +2,9 @@
 # Python
 ######################
 
+## dotfiles' python dir
+export PYDOTDIR="/Users/pyteyon/Projects/dotfiles/python"
+
 ## PYTHONPATH for import packages
 # AtCoder Stream
 export PYTHONPATH="/Users/pyteyon/Projects/MyProjects/AtCoderStream/atcoder-stream-backend/libraries/lib"
