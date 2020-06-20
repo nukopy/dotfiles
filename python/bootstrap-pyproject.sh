@@ -42,4 +42,4 @@ echo "===== DONE: create Python project ====="
 
 end_time=$(date +%s)
 echo "Build Time:"
-timestamp start_time end_time
+calc_timediff start_time end_time

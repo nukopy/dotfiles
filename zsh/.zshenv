@@ -31,7 +31,7 @@ export AIRFLOW_GPL_UNIDECODE=yes
 ######################
 
 # timestamp
-timestamp () {
+calc_timediff () {
     # $1: start_time
     # $2: end_time
     diff_time=$(($2 - $1))
