@@ -68,7 +68,7 @@ alias mecab-neologd="mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd"
 
 ###### Git Command #####
 alias gpom="git push origin master"
-alias gst="git status"
+alias gs="git status"
 
 ###### Docker #####
 ## common
