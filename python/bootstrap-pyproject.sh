@@ -31,7 +31,7 @@ echo "5. Lock dependencies ..."
 poetry lock
 
 echo "5. Add .envrc ..."
-cat $PYDOTDIR/python/.envrc-venv > $WORK_DIR/.envrc
+cat $PYDOTDIR/.envrc-pyproject > $WORK_DIR/.envrc
 
 echo "6. Add activate direnv ..."
 direnv allow
