@@ -69,6 +69,15 @@ alias mecab-neologd="mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd"
 ###### Git Command #####
 alias gpom="git push origin master"
 alias gs="git status"
+alias gst="git stash"
+gstpop () {
+    # $1: index of an element in stack
+    # "gstpop 1" = "git stash pop stash@{1}"
+    git stash pop stash@{$1}
+}
+alias gb="git branch"
+alias gc="git checkout"
+alias grs="git reset --soft @^"
 
 ###### Docker #####
 ## common
