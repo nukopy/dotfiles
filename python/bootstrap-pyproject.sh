@@ -4,6 +4,8 @@
 echo $(python --version)
 echo $(poetry --version)
 echo "direnv $(direnv --version)"
+echo $(gibo version | head -n 1)
+echo ""
 
 echo "===== START: create Python project: 6 steps ====="
 
@@ -36,4 +38,6 @@ cat $PYDOTDIR/.envrc-pyproject > $WORK_DIR/.envrc
 echo "6. Add activate direnv ..."
 direnv allow
 
+echo "8. Create .gitignore ..."
+gibo dump Python VisualStudioCode > $WORK_DIR/.gitignore
 echo "===== DONE: create Python project ====="
