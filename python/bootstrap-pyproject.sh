@@ -1,5 +1,7 @@
 #!/bin/bash
 
+start_time=$(date +%s)
+
 # print software versions
 echo $(python --version)
 echo $(poetry --version)
@@ -37,3 +39,7 @@ echo "8. Create .gitignore ..."
 gibo dump Python VisualStudioCode > $WORK_DIR/.gitignore
 
 echo "===== DONE: create Python project ====="
+
+end_time=$(date +%s)
+echo "Build Time:"
+timestamp start_time end_time
