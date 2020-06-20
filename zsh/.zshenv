@@ -27,6 +27,20 @@ export AIRFLOW_HOME=~/airflow
 export AIRFLOW_GPL_UNIDECODE=yes
 
 ######################
+# utility functions
+######################
+
+# timestamp
+timestamp () {
+    # $1: start_time
+    # $2: end_time
+    diff_time=$(($2 - $1))
+    ((hrs=diff_time/3600, min=(diff_time%3600)/60, sec=diff_time%60))
+    timestamp=$(printf "%02d hr %02d min %02d sec" $hrs $min $sec)
+    echo $timestamp
+}
+
+######################
 # others
 ######################
 
