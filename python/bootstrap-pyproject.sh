@@ -19,7 +19,7 @@ source venv/bin/activate
 echo "3. Create poetry settings(pyproject.toml) ..."
 cat $PYDOTDIR/pyproject.toml > $WORK_DIR/pyproject.toml
 
-echo "4. Install Python dev-dependencies: flake8, black, ipython, pytest ..."
+echo "4. Install Python dev-dependencies: flake8, black, ipython, jupyterlab, pytest ..."
 poetry add --dev \
     flake8 \
     black \
