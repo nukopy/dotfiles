@@ -18,7 +18,7 @@ python -m venv venv
 echo "2. Activate venv ..."
 source venv/bin/activate
 
-echo "3. Create poetry settings(pyproject.toml) ..."
+echo "3. Create a setting file of Poetry(pyproject.toml) ..."
 cat $PYDOTDIR/pyproject.toml > $WORK_DIR/pyproject.toml
 
 echo "4. Install Python dev-dependencies: flake8, black, ipython, jupyterlab, pytest ..."
@@ -32,12 +32,13 @@ poetry add --dev \
 echo "5. Lock dependencies ..."
 poetry lock
 
-echo "5. Add .envrc ..."
+echo "6. Create .envrc ..."
 cat $PYDOTDIR/.envrc-pyproject > $WORK_DIR/.envrc
 
-echo "6. Add activate direnv ..."
+echo "7. Activate direnv ..."
 direnv allow
 
 echo "8. Create .gitignore ..."
 gibo dump Python VisualStudioCode > $WORK_DIR/.gitignore
+
 echo "===== DONE: create Python project ====="
