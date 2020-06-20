@@ -21,13 +21,8 @@ source venv/bin/activate
 echo "3. Create a setting file of Poetry(pyproject.toml) ..."
 cat $PYDOTDIR/pyproject.toml > $WORK_DIR/pyproject.toml
 
-echo "4. Install Python dev-dependencies: flake8, black, ipython, jupyterlab, pytest ..."
-poetry add --dev \
-    flake8 \
-    black \
-    ipython \
-    jupyterlab \
-    pytest
+echo "4. Install Python dev-dependencies ..."
+poetry install
 
 echo "5. Lock dependencies ..."
 poetry lock
