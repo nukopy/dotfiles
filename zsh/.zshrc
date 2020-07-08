@@ -55,6 +55,7 @@ alias rst="echo 'restart shell...'; exec $SHELL -l;"
 ## utility
 ### general
 alias path="echo $PATH"
+alias fd="open -a Finder"
 
 ### for applications
 alias cal="open /Users/pyteyon/Applications/Chrome\\ Apps.localized/Google\\ Calendar.app"
