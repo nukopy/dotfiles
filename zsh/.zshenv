@@ -18,6 +18,10 @@ PYTHONPATH="${PYTHONPATH}:${APP_HOME}"
 APP_HOME='/Users/pyteyon/Projects/research/Kurodalab/src'
 PYTHONPATH="${PYTHONPATH}:${APP_HOME}"
 
+# poc streamlit
+APP_HOME='/Users/pyteyon/Projects/InternProjects/JXPressCorp/task/task04/poc/src'
+PYTHONPATH="${PYTHONPATH}:${APP_HOME}"
+
 ## pipenv
 # create ".venv" dir when "pipenv init"
 export PIPENV_VENV_IN_PROJECT=true
