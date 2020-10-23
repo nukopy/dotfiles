@@ -13,6 +13,10 @@ eval "$(starship init zsh)"
 # for Homebrew
 export PATH="/usr/local/sbin:$PATH"
 
+# for Git
+# 元の git は /usr/bin/git にあるから，それより早く検索されるようにする
+export PATH="/usr/local/bin:$PATH"
+
 # for anyenv
 eval "$(anyenv init -)"
 export PATH="$HOME/.anyenv/bin:$PATH"
