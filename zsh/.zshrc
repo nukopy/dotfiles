@@ -24,6 +24,11 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 # for poetry
 export PATH="$HOME/.poetry/bin:$PATH"
 
+# for Java
+# XX にバージョン番号を入れる
+# export JAVA_HOME=`usr/libexec/java_home -v XX`
+export JAVA_HOME=`/usr/libexec/java_home -v 11`
+
 ######################
 # Aliases
 ######################
