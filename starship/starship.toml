@@ -116,7 +116,7 @@ disabled = false
 charging_symbol = "⚡"
 discharging_symbol = "🔋 "
 [[battery.display]]
-threshold = 50
+threshold = 70
 style = "bold green"
 
 [time]
