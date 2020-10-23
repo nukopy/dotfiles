@@ -3,5 +3,6 @@
 
 # zsh
 .zcompdump
+.zcompcache/
 .zsh_history
 .zshenv.secret
