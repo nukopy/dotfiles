@@ -77,6 +77,9 @@ alias ojt="oj test -c"  # for OnlineJudgeTool
 ### for MeCab
 alias mecab-neologd="mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd"
 
+### for direnv
+alias da="direnv allow"
+
 ###### Git Command #####
 alias gpom="git push origin master"
 alias gs="git status"
