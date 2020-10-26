@@ -61,6 +61,17 @@ alias -g gr="| grep --color"  # add pipe option: ex) $ la gr "py"
 ## exec
 alias rst="echo 'restart shell...'; exec $SHELL -l;"
 
+## tar
+# uppack tar.gz
+# tar zxvf [TARGET].tar.gz
+# tar zxvf test.tar.gz
+alias targz="tar zxvf"
+
+# pack files to tar.gz
+# tar zcvf [OUTPUT].tar.gz [TARGET]
+# tar zcvf test.tar.gz test.txt
+alias targz-p="tar zcvf"
+
 ## utility
 ### general
 alias path="echo $PATH"
