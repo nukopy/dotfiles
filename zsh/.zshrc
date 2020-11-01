@@ -101,7 +101,8 @@ gstpop () {
     git stash pop stash@{$1}
 }
 alias gb="git branch"
-alias gc="git checkout"
+alias gc="git clone"
+alias gsw="git switch"
 alias grs="git reset --soft @^"
 
 ###### Docker #####
