@@ -185,6 +185,13 @@ alias poetry-req='poetry run pip freeze > ./requirements.txt'
 ## pipenv
 alias penvreq='pipenv lock -r > requirements.txt'
 
+##### TypeScript
+## npx
+alias ts="npx ts-node"
+
+## yarn
+alias ys="yarn start"
+
 ################################
 # other utility aliases
 ################################
