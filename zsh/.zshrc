@@ -1,14 +1,14 @@
-######################
+############################################
 # init
-######################
+############################################
 
 ##### starship(for shell customize) #####
 # https://starship.rs/ja-JP/
 eval "$(starship init zsh)"
 
-######################
+############################################
 # add to PATH
-######################
+############################################
 
 # for Homebrew
 export PATH="/usr/local/sbin:$PATH"
@@ -29,16 +29,19 @@ export PATH="$HOME/.poetry/bin:$PATH"
 # export JAVA_HOME=`usr/libexec/java_home -v XX`
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
-######################
+############################################
 # Aliases
-######################
+############################################
 
-##### Basic commands #####
-## ls
+################################
+# aliases for system command
+################################
+
+# ls
 alias la="ls -l -a -G"  # -G is a color option on only macOS
 # alias la="ls -l -a --color=auto"  # a color option on Linux
 
-## cd
+# cd
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -54,45 +57,34 @@ alias cdlex="cd ~/Projects/InternProjects/JXPressCorp/task/task03_tvasahi_2020_0
 alias cdjx="cd ~/Projects/InternProjects/JXPressCorp/"
 alias cdkr="cd ~/Projects/research/Kurodalab/"
 
-## grep
+# grep
 # alias gr="grep --color"
 alias -g gr="| grep --color"  # add pipe option: ex) $ la gr "py"
 
-## exec
+# exec
+# restart shell
 alias rst="echo 'restart shell...'; exec $SHELL -l;"
 
-## tar
-# unpack tar.gz
+# tar
+# - unpack tar.gz
 # tar zxvf [TARGET].tar.gz
 # tar zxvf test.tar.gz
 alias targz="tar zxvf"
 
-# pack files to tar.gz
+# - pack files to tar.gz
 # tar zcvf [OUTPUT].tar.gz [TARGET]
 # tar zcvf test.tar.gz test.txt
 alias targz-p="tar zcvf"
 
-## utility
-### general
-alias path="echo $PATH"
-alias fd="open -a Finder"
+################################
+# aliases for Git
+################################
 
-### for applications
-alias cal="open /Users/pyteyon/Applications/Chrome\\ Apps.localized/Google\\ Calendar.app"
-alias st="open '/Applications/Sourcetree.app'"
-
-### for AtCoder
-alias rmt="rm -rf test"
-alias ojt="oj test -c"  # for OnlineJudgeTool
-
-### for MeCab
-alias mecab-neologd="mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd"
-
-### for direnv
-alias da="direnv allow"
-
-###### Git Command #####
+alias gb="git branch"
+alias gc="git clone"
+alias gpo="git push origin"
 alias gpom="git push origin master"
+alias grs="git reset --soft @^"
 alias gs="git status"
 alias gst="git stash"
 gstpop () {
@@ -100,67 +92,73 @@ gstpop () {
     # "gstpop 1" = "git stash pop stash@{1}"
     git stash pop stash@{$1}
 }
-alias gb="git branch"
-alias gc="git clone"
 alias gsw="git switch"
-alias grs="git reset --soft @^"
 
-###### Docker #####
-## common
+################################
+# aliases for Docker
+################################
+
+# common
 alias docker_daemon='open --background -a Docker'
 alias dcr="docker"
 
-## pull
+# pull
 alias dp="docker pull"
 
-## images
+# images
 alias di="docker images"
 alias dia="docker images --all"  # include intermediates
 
-## inspect
+# inspect
 alias dins="docker inspect"
 
-## ps
+# ps
 alias dps="docker ps"  # output running container
 alias dpa="docker ps --all"  # output all container whether running or not
 
-## container
+# container
 alias dcnt="docker container"
 alias dcl="docker container ls"
 alias dcla="docker container ls --all"
-## container run
+# container run
 alias drunit="docker container run --rm -it"  # interactive and virtual terminal
 alias drund="docker container run -d"  # detouch: execute as background process
 alias dstr="docker container start"
 alias dstp="docker container stop"
 alias drstr="docker container restart"
-## enter running container
+# enter running container
 dcin () {
     # $1: [CONTAINER-ID] or [CONTAINER-NAME]
     docker container exec -it $1 /bin/bash
 }
 
-## remove
+# remove
 alias drm="docker container rm"  # rm container
 alias drmi="docker rmi"  # rm image
 alias drminone="docker rmi $(docker images -f 'dangling=true' -q)"  # cf: https://shinkufencer.hateblo.jp/entry/2019/07/23/000000
 # When new image use an exisisting tag, old image's tag become "<none>"
 
-## helper
+# helper
 alias dcalias="cat $ZDOTDIR/.zshrc gr docker"  # use "gr"(grep with color)
 
-###### Docker Compose #####
-## common
+################################
+# aliases for Docker Compose
+################################
+
+# common
 alias dcm="docker-compose"
 
-## up
+# up
 alias dcup="docker-compose up"  # display log
 alias dcupd="docker-compose up --detach"  # run container in the background(no display log)
 
-## build
+# build
 alias dcb="docker-compose build"
 alias dcbn="docker-compose build --no-cache"
 
+################################
+# language utility aliases
+################################
 
 ##### Python #####
 ## pip
@@ -180,15 +178,35 @@ alias pyv='python -m venv venv'
 alias start-pyproject="source $PYDOTDIR/bootstrap-pyproject.sh"
 alias clean-pyproject="rm -rf ./venv; rm ./pyproject.toml ./poetry.lock;"
 
-## pipenv
-alias penvreq='pipenv lock -r > requirements.txt'
-
 ## poetry
 alias poetry-dev='poetry add --dev black flake8 pytest ipython jupyterlab'
 alias poetry-req='poetry run pip freeze > ./requirements.txt'
 
-##### AtCoder #####
-alias rmt='rm -rf test'
+## pipenv
+alias penvreq='pipenv lock -r > requirements.txt'
+
+################################
+# other utility aliases
+################################
+
+# general
+alias path="echo $PATH"
+alias fd="open -a Finder"
+
+# for applications
+alias cal="open /Users/pyteyon/Applications/Chrome\\ Apps.localized/Google\\ Calendar.app"
+alias st="open '/Applications/Sourcetree.app'"
+
+# for AtCoder
+alias rmt="rm -rf test"
+alias ojt="oj test -c"  # for OnlineJudgeTool
+
+# for MeCab
+alias mecab-neologd="mecab -d /usr/local/lib/mecab/dic/mecab-ipadic-neologd"
+
+# for direnv
+alias dinit="direnv edit ."
+alias da="direnv allow"
 
 ##### Others #####
 
@@ -243,17 +261,17 @@ xmas() {
     echo "------------------------------------------------"
 }
 
-###########################
+############################################
 # zsh command after alias settings
-###########################
+############################################
 
 # direnv（MUST load `direnv` after alias settings）
 export EDITOR=code
 eval "$(direnv hook zsh)"
 
-###########################
+############################################
 # zsh command completion
-###########################
+############################################
 
 # poetry settings (not for homebrew setup)
 fpath+=~/.zfunc
