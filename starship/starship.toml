@@ -138,19 +138,19 @@ disabled = false
 success_symbol = "[➜](bold green)" 
 error_symbol = "[✗](bold red) "
 
+[aws]
+# format = "on [$symbol$profile(\($region\))]($style) ""
+disabled = false
+# format = ""
+style = "bold blue"
+symbol = "AWS Region: "
+
 ########################################
 # disabled: prompt detail settings
 ########################################
 
 [gcloud]
 disabled = true
-
-[aws]
-# format = "on [$symbol$profile(\($region\))]($style) ""
-disabled = true
-format = ""
-style = "bold blue"
-symbol = "AWS Region: "
 
 [aws.region_aliases]
 # ap-northeast-1 = "an1"
