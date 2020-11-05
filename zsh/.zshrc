@@ -56,6 +56,7 @@ alias cdaf="cd ~/Projects/MyProjects/AtCoderStream/atcoder-stream-fronted"
 alias cdlex="cd ~/Projects/InternProjects/JXPressCorp/task/task03_tvasahi_2020_0507_to_xxxx/tvasahi-lex"
 alias cdjx="cd ~/Projects/InternProjects/JXPressCorp/"
 alias cdkr="cd ~/Projects/research/Kurodalab/"
+alias bk="cd ${OLDPWD}"
 
 # grep
 # alias gr="grep --color"
