@@ -164,6 +164,7 @@ alias dcbn="docker-compose build --no-cache"
 ##### Python #####
 ## pip
 alias pip_uninstall_all='pip freeze | xargs pip uninstall -y'
+alias pipu='pip install -U pip'
 
 ## jupyter notebook
 alias ipy='ipython'
