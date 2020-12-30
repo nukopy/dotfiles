@@ -100,7 +100,7 @@ alias gsw="git switch"
 ################################
 
 # common
-alias docker_daemon='open --background -a Docker'
+alias opendc='open --background -a Docker'
 alias dcr="docker"
 
 # pull
