@@ -10,10 +10,6 @@ export PYDOTDIR="/Users/pyteyon/Projects/dotfiles/python"
 export PYTHONPATH="/Users/pyteyon/Projects/MyProjects/AtCoderStream/atcoder-stream-backend/libraries/lib"
 PYTHONPATH="${PYTHONPATH}:/Users/pyteyon/Projects/MyProjects/AtCoderStream/atcoder-stream-backend/libraries/twitterapi"
 
-# jxpress
-APP_HOME='/Users/pyteyon/Projects/InternProjects/JXPressCorp/task/task01_20200420/cf/gcp-billing'
-PYTHONPATH="${PYTHONPATH}:${APP_HOME}"
-
 # kurodalab
 APP_HOME='/Users/pyteyon/Projects/research/Kurodalab/src'
 PYTHONPATH="${PYTHONPATH}:${APP_HOME}"
@@ -21,6 +17,10 @@ PYTHONPATH="${PYTHONPATH}:${APP_HOME}"
 # poc streamlit
 APP_HOME='/Users/pyteyon/Projects/InternProjects/JXPressCorp/task/task04/poc/src'
 PYTHONPATH="${PYTHONPATH}:${APP_HOME}"
+
+# jxpress
+# APP_HOME="/Users/pyteyon/Projects/InternProjects/JXPressCorp/task/task04/rdd/misc/reporting/backend"
+# PYTHONPATH="${PYTHONPATH}:${APP_HOME}"
 
 ## pipenv
 # create ".venv" dir when "pipenv init"
