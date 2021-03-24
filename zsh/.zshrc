@@ -78,6 +78,28 @@ alias targz="tar zxvf"
 alias targz-p="tar zcvf"
 
 ################################
+# aliases for Homebrew
+################################
+
+brew-install () {
+  brew install $1
+  brew bundle dump --force --describe --file=$HOMEBREW_BREWFILE
+  cd $DOTDIR
+  git add .
+  git commit -m "update: add $1 and update Brewfile"
+  git push origin master
+}
+
+brew-uninstall () {
+  brew uninstall $1
+  brew bundle dump --force --describe --file=$HOMEBREW_BREWFILE
+  cd $DOTDIR
+  git add .
+  git commit -m "update: remove $1 and update Brewfile"
+  git push origin master
+}
+
+################################
 # aliases for Git
 ################################
 

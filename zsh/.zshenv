@@ -1,4 +1,10 @@
 ######################
+# General
+######################
+
+export HOMEBREW_BREWFILE="/Users/pyteyon/Projects/dotfiles/homebrew/Brewfile"
+
+######################
 # Python
 ######################
 
