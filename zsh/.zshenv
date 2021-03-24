@@ -2,6 +2,7 @@
 # General
 ######################
 
+export DOTDIR="/Users/pyteyon/Projects/dotfiles"
 export HOMEBREW_BREWFILE="/Users/pyteyon/Projects/dotfiles/homebrew/Brewfile"
 
 ######################
