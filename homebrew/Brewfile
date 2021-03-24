@@ -46,6 +46,8 @@ brew "srt"
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Toolkit for image loading and pixel buffer manipulation
+brew "gdk-pixbuf"
 # Library for processing command-line flags
 brew "gflags"
 # Access GitHub's .gitignore boilerplates
@@ -60,6 +62,8 @@ brew "go"
 brew "python@3.8"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# Graph visualization software from AT&T and Bell Labs
+brew "graphviz"
 # Smarter Dockerfile linter to validate best practices
 brew "hadolint"
 # Cross-platform program for developing Haskell projects
@@ -70,6 +74,8 @@ brew "helm"
 brew "htop"
 # Add GitHub support to git on the command-line
 brew "hub"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Istio configuration command-line utility
 brew "istioctl"
 # Extendable open source continuous integration server
