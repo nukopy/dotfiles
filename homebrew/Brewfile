@@ -150,8 +150,6 @@ cask "discord"
 cask "docker"
 # Tool for using an iPad as a second display
 cask "duet"
-# App for note taking, organizing, task lists, and archiving
-cask "evernote"
 # Web browser
 cask "firefox"
 cask "font-fira-code"
@@ -193,8 +191,6 @@ cask "sequel-pro"
 cask "skype"
 # Team communication and collaboration software
 cask "slack"
-# Graphical client for Git version control
-cask "sourcetree"
 # Native GUI tool for relational databases
 cask "tableplus"
 # Free and open-source OpenVPN client
