@@ -8,5 +8,6 @@ ln -sf $HOME/Projects/dotfiles/karabiner ~/.config/karabiner
 ln -sf $HOME/Projects/dotfiles/direnv/.direnvrc ~/.direnvrc
 ln -sf $HOME/Projects/dotfiles/starship/starship.toml ~/.config/starship.toml
 ln -sf $HOME/Projects/dotfiles/spacemacs/.spacemacs ~/.spacemacs
+ln -sf $HOME/Projects/dotfiles/homebrew/Brewfile ~/.config/brewfile/Brewfile
 
 exec $SHELL -l  # restart shell
