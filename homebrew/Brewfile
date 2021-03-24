@@ -72,6 +72,8 @@ brew "htop"
 brew "hub"
 # Istio configuration command-line utility
 brew "istioctl"
+# Extendable open source continuous integration server
+brew "jenkins"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Programming language designed to minimize programmer experience
