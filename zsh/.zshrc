@@ -105,6 +105,7 @@ brew-uninstall () {
 
 alias gb="git branch"
 alias gc="git clone"
+alias gcm="git commit -m"
 alias gpo="git push origin"
 alias gpom="git push origin master"
 alias grs="git reset --soft @^"
