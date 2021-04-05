@@ -32,6 +32,8 @@ brew "circleci"
 brew "clang-format"
 # Get, unpack, build, and install modules from CPAN
 brew "cpanminus"
+# C /C++ based unit xUnit test framework
+brew "cpputest"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Generate introspection data for GObject libraries
@@ -150,6 +152,8 @@ cask "appcleaner"
 cask "bluestacks"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# API documentation browser and code snippet manager
+cask "dash"
 # Trains AIs to understand and translate texts
 cask "deepl"
 # Voice and text chat software
