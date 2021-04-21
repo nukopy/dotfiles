@@ -29,6 +29,10 @@ export PATH="$HOME/.poetry/bin:$PATH"
 # export JAVA_HOME=`usr/libexec/java_home -v XX`
 export JAVA_HOME=`/usr/libexec/java_home -v 11`
 
+# for GCP
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
 ############################################
 # Aliases
 ############################################
