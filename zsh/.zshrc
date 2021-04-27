@@ -27,7 +27,9 @@ export PATH="$HOME/.poetry/bin:$PATH"
 # for Java
 # XX にバージョン番号を入れる
 # export JAVA_HOME=`usr/libexec/java_home -v XX`
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
+
+# for the Dart/Flutter SDK
+export PATH="$PATH:$HOME/SDKs/flutter/bin"
 
 # for GCP
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
