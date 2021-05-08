@@ -116,6 +116,9 @@ alias gl="git log --all --decorate --graph --oneline"
 alias gpo="git push origin"
 alias gpom="git push origin master"
 alias gpod="git push origin develop"
+alias gfmms="git fetch && git merge origin/master"
+alias gfmmn="git fetch && git merge origin/main"
+alias gfmd="git fetch && git merge origin/develop"
 alias grs="git reset --soft @^"
 alias gs="git status"
 alias gst="git stash"
@@ -125,6 +128,7 @@ gstpop () {
     git stash pop stash@{$1}
 }
 alias gsw="git switch"
+alias gitalias="cat $ZDOTDIR/.zshrc gr git"
 
 ################################
 # aliases for Docker
