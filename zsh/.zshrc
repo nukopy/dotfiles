@@ -21,6 +21,10 @@ export PATH="/usr/local/bin:$PATH"
 eval "$(anyenv init -)"
 export PATH="$HOME/.anyenv/bin:$PATH"
 
+# for pyenv
+eval "$(pyenv init -)"
+export PYENV_VERSION="3.9.5"
+
 # for poetry
 export PATH="$HOME/.poetry/bin:$PATH"
 
