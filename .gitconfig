@@ -1,19 +1,5 @@
-[core]
-	excludesfile = /Users/pyteyon/.gitignore_global
-	editor = vim -c \"set fenc=utf-8\"
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-[user]
-	name = nukopy
-	email = pytwbf201830@gmail.com
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-[commit]
-	template = /Users/okuwaki/.stCommitMsg
+# ディレクトリ毎に分ける
+[includeIf "gitdir:~/Projects/"]
+  path = ~/Projects/.gitconfig
+[includeIf "gitdir:~/Projects_neets13/"]
+  path = ~/Projects_neets13/.gitconfig
