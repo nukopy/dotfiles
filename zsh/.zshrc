@@ -21,6 +21,10 @@ export PATH="/usr/local/bin:$PATH"
 eval "$(anyenv init -)"
 export PATH="$HOME/.anyenv/bin:$PATH"
 
+# for Golang
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$(go env GOPATH)/bin
+
 # for pyenv
 eval "$(pyenv init -)"
 export PYENV_VERSION="3.9.5"
