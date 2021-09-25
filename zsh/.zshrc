@@ -40,7 +40,6 @@ export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
 
 # for the Dart/Flutter SDK
 export PATH="$PATH:$HOME/SDKs/flutter/bin"
-export PATH="$PATH:$HOME/Development/flutter/bin"
 
 # for GCP
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
