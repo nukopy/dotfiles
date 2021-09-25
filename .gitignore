@@ -1,8 +1,9 @@
 # general
 .DS_Store
+.zshenv.secret
 
 # zsh
-.zcompdump
 .zcompcache/
+.zsh_sessions/
 .zsh_history
-.zshenv.secret
+.zcompdump
