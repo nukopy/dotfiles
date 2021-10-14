@@ -24,6 +24,7 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 # for Golang
 export GOPATH=$(go env GOPATH)
 export PATH=$PATH:$(go env GOPATH)/bin
+export GO111MODULE=on
 
 # for pyenv
 eval "$(pyenv init -)"
