@@ -324,6 +324,9 @@ xmas() {
 export EDITOR=code
 eval "$(direnv hook zsh)"
 
+# GitHub CLI
+eval "$(gh completion -s zsh)"
+
 ############################################
 # zsh command completion
 ############################################
