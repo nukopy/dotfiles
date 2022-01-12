@@ -6,16 +6,52 @@ tap "homebrew/cask-fonts"
 tap "homebrew/core"
 # All in one for **env
 brew "anyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Get/set bluetooth power and discoverable state
+brew "blueutil"
+# Core application library for C
+brew "glib"
+# Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
+brew "clang-format"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Subtitle renderer for the ASS/SSA subtitle format
+brew "libass"
+# Secure Reliable Transport
+brew "srt"
+# GNU debugger
+brew "gdb"
+# GitHub command-line tool
+brew "gh"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Fast linters runner for Go
+brew "golangci-lint"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Lazier way to manage everything docker
 brew "lazydocker"
+# Library for complex text layout
+brew "libraqm"
+# HTTP/2 C Library
+brew "nghttp2"
+# Friendly PIL fork (Python Imaging Library)
+brew "pillow"
+# Seamless operability between C++11 and Python
+brew "pybind11"
 # Adds an OCR text layer to scanned PDF files
 brew "ocrmypdf"
 # Development kit for the Java programming language
@@ -26,14 +62,20 @@ brew "pstree"
 brew "rust"
 # Cross-shell prompt for astronauts
 brew "starship"
+# User interface to the TELNET protocol
+brew "telnet"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# SDK
-brew "dart-lang/dart/dart"
+# Internet file retriever
+brew "wget"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
 # Application launcher and productivity software
 cask "alfred"
+# Tools for building Android applications
+cask "android-studio"
 # Memory training application
 cask "anki"
 # Clipboard extension app
@@ -60,6 +102,8 @@ cask "google-cloud-sdk"
 cask "google-japanese-ime"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Keyboard customizer
+cask "karabiner-elements"
 # Software for Logitech devices
 cask "logitech-options"
 # Provides updates to various Microsoft products
@@ -88,9 +132,11 @@ cask "tableplus"
 cask "touchdesigner"
 # Development environment
 cask "vagrant"
-# Free and open-source hosted hypervisor for x86 virtualization
+# Virtualizer for x86 hardware
 cask "virtualbox"
 # Open-source code editor
 cask "visual-studio-code"
+# Network protocol analyzer
+cask "wireshark"
 # Video communication and virtual meeting platform
 cask "zoom"
