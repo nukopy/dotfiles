@@ -103,7 +103,7 @@ brew-install () {
   brew bundle dump --force --describe --file=$HOMEBREW_BREWFILE
   cd $DOTDIR
   git add .
-  git commit -m "update: add $1 and update Brewfile"
+  git commit -m "chore: add $1 and update Brewfile"
   git push origin master
 }
 
@@ -112,7 +112,7 @@ brew-uninstall () {
   brew bundle dump --force --describe --file=$HOMEBREW_BREWFILE
   cd $DOTDIR
   git add .
-  git commit -m "update: remove $1 and update Brewfile"
+  git commit -m "chore: remove $1 and update Brewfile"
   git push origin master
 }
 
