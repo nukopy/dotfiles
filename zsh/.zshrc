@@ -6,6 +6,9 @@
 # https://starship.rs/ja-JP/
 eval "$(starship init zsh)"
 
+# load shell keybind
+source $ZDOTDIR/.zshrc.keybind
+
 ############################################
 # add to PATH
 ############################################

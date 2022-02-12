@@ -1,0 +1,22 @@
+# ターミナル内でのキーバインド
+# ref 1: https://gist.github.com/welldan97/5127861
+# ref 2: https://dev.classmethod.jp/articles/zsh-zle-introduction/
+
+# functions
+pb-kill-line () {
+  zle kill-line
+  echo -n $CUTBUFFER | pbcopy
+}
+
+pb-yank () {
+  CUTBUFFER=$(pbpaste)
+  zle yank
+}
+
+# add widgets
+zle -N pb-kill-line
+zle -N pb-yank
+
+# binding
+bindkey '^K' pb-kill-line
+bindkey '^Y' pb-yank
