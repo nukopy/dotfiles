@@ -2,7 +2,7 @@
 # init
 ############################################
 
-##### starship(for shell customize) #####
+# starship(for shell customize)
 # https://starship.rs/ja-JP/
 eval "$(starship init zsh)"
 
