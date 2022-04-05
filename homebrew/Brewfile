@@ -18,6 +18,8 @@ brew "glib"
 brew "clang-format"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# .NET Core
+brew "dotnet"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # Generate introspection data for GObject libraries
@@ -78,6 +80,8 @@ cask "alfred"
 cask "android-studio"
 # Memory training application
 cask "anki"
+# 3D creation suite
+cask "blender"
 # Clipboard extension app
 cask "clipy"
 # Trains AIs to understand and translate texts
@@ -93,6 +97,8 @@ cask "firefox"
 cask "font-fira-code"
 cask "font-hack-nerd-font"
 cask "font-noto-sans-gothic"
+# Utility to visualize and explore GraphViz graphs
+cask "gephi"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
@@ -122,6 +128,8 @@ cask "nosqlbooster-for-mongodb"
 cask "notion"
 # MySQL/MariaDB database management
 cask "sequel-ace"
+# PDF reader and note-taking application
+cask "skim"
 # Team communication and collaboration software
 cask "slack"
 # IDE, client, and GUI for MongoDB
@@ -130,6 +138,8 @@ cask "studio-3t"
 cask "tableplus"
 # Tool for creating dynamic digital art
 cask "touchdesigner"
+# Free and open-source OpenVPN client
+cask "tunnelblick"
 # Development environment
 cask "vagrant"
 # Virtualizer for x86 hardware

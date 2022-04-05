@@ -71,6 +71,7 @@ alias cdp="cd ~/Projects"
 alias cdd="cd ~/Projects/dotfiles"
 alias cdo="cd ~/Projects/OSS"
 alias cdm="cd ~/Projects/MyProjects"
+alias cda="cd ~/Projects/MyProjects/App"
 
 # grep
 # alias gr="grep --color"
