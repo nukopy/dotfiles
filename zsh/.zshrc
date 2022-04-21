@@ -69,7 +69,7 @@ alias .....="cd ../../../.."
 alias "cd-"="cd -"
 alias cdp="cd ~/Projects"
 alias cdd="cd ~/Projects/dotfiles"
-alias cdo="cd ~/Projects/OSS"
+alias cdr="cd ~/Projects/Job/Firms/RICOH"
 alias cdm="cd ~/Projects/MyProjects"
 alias cda="cd ~/Projects/MyProjects/App"
 
