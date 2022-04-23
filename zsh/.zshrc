@@ -72,6 +72,7 @@ alias cdd="cd ~/Projects/dotfiles"
 alias cdr="cd ~/Projects/Job/Firms/RICOH"
 alias cdm="cd ~/Projects/MyProjects"
 alias cda="cd ~/Projects/MyProjects/App"
+alias cdc="cd ~/Projects/Academic/ComputerScience"
 
 # grep
 # alias gr="grep --color"
