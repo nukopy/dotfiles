@@ -4,6 +4,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "mongodb/brew"
 # All in one for **env
 brew "anyenv"
 # Interpreted, interactive, object-oriented programming language
@@ -30,6 +31,12 @@ brew "harfbuzz"
 brew "libass"
 # Secure Reliable Transport
 brew "srt"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg@4"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # GNU debugger
 brew "gdb"
 # GitHub command-line tool
@@ -40,6 +47,8 @@ brew "go"
 brew "golangci-lint"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Lightweight and flexible command-line JSON processor
@@ -48,8 +57,14 @@ brew "jq"
 brew "lazydocker"
 # Library for complex text layout
 brew "libraqm"
+# MongoDB CLI enables you to manage your MongoDB in the Cloud
+brew "mongocli"
+# Web server build on top of Libmongoose embedded library
+brew "mongoose"
 # HTTP/2 C Library
 brew "nghttp2"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
+brew "nginx"
 # Friendly PIL fork (Python Imaging Library)
 brew "pillow"
 # Seamless operability between C++11 and Python
@@ -62,6 +77,8 @@ brew "openjdk@11"
 brew "pstree"
 # Safe, concurrent, practical language
 brew "rust"
+# Prints a steam locomotive if you type sl instead of ls
+brew "sl"
 # Cross-shell prompt for astronauts
 brew "starship"
 # User interface to the TELNET protocol
@@ -70,6 +87,8 @@ brew "telnet"
 brew "tree"
 # Internet file retriever
 brew "wget"
+# This package contains standard utilities for interacting with MongoDB.
+brew "mongodb/brew/mongodb-database-tools"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # View, print, and comment on PDF documents
@@ -97,7 +116,7 @@ cask "firefox"
 cask "font-fira-code"
 cask "font-hack-nerd-font"
 cask "font-noto-sans-gothic"
-# Utility to visualize and explore GraphViz graphs
+# Open-source platform for visualizing and manipulating large graphs
 cask "gephi"
 # Free and open-source image editor
 cask "gimp"
@@ -118,6 +137,8 @@ cask "microsoft-auto-update"
 cask "microsoft-office"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Online collaborative whiteboard platform
+cask "miro"
 # Visual tool to design, develop and administer MySQL servers
 cask "mysqlworkbench"
 # Developer IDE or Management Environment for Neo4j instances
