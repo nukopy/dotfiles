@@ -15,6 +15,7 @@ source $ZDOTDIR/.zshrc.keybind
 
 # for Homebrew
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # for Git
 # 元の git は /usr/bin/git にあるから，それより早く検索されるようにする
