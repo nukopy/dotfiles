@@ -32,7 +32,7 @@ export GO111MODULE=on
 
 # for pyenv
 eval "$(pyenv init -)"
-export PYENV_VERSION="3.9.5"
+# export PYENV_VERSION="3.9.5"
 
 # for poetry
 export PATH="$HOME/.poetry/bin:$PATH"
