@@ -8,23 +8,27 @@ tap "mongodb/brew"
 # All in one for **env
 brew "anyenv"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
+brew "python@3.10"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Get/set bluetooth power and discoverable state
 brew "blueutil"
 # Core application library for C
 brew "glib"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # .NET Core
 brew "dotnet"
+# Library to load and enumerate PKCS#11 modules
+brew "p11-kit"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # OpenType text shaping engine
 brew "harfbuzz"
 # Subtitle renderer for the ASS/SSA subtitle format
@@ -35,14 +39,16 @@ brew "srt"
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg@4"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # GNU debugger
 brew "gdb"
+# Toolkit for image loading and pixel buffer manipulation
+brew "gdk-pixbuf"
 # GitHub command-line tool
 brew "gh"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Fast linters runner for Go
 brew "golangci-lint"
 # Framework for layout and rendering of i18n text
@@ -51,6 +57,8 @@ brew "pango"
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# CLI wrapper for basic network utilities on macOS - ip command
+brew "iproute2mac"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Lazier way to manage everything docker
@@ -65,10 +73,16 @@ brew "mongoose"
 brew "nghttp2"
 # HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx"
+# Port scanning utility for large networks
+brew "nmap"
 # Friendly PIL fork (Python Imaging Library)
 brew "pillow"
 # Seamless operability between C++11 and Python
 brew "pybind11"
+# Tools for and transforming and inspecting PDF files
+brew "qpdf"
+# Post-processing for scanned/photocopied books
+brew "unpaper"
 # Adds an OCR text layer to scanned PDF files
 brew "ocrmypdf"
 # Development kit for the Java programming language
@@ -87,6 +101,8 @@ brew "telnet"
 brew "tree"
 # Internet file retriever
 brew "wget"
+# Library to create, extract, and modify Windows Imaging files
+brew "wimlib"
 # This package contains standard utilities for interacting with MongoDB.
 brew "mongodb/brew/mongodb-database-tools"
 # Password manager that keeps all passwords secure behind one password
@@ -114,6 +130,7 @@ cask "figma"
 # Web browser
 cask "firefox"
 cask "font-fira-code"
+# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 cask "font-noto-sans-gothic"
 # Open-source platform for visualizing and manipulating large graphs
@@ -147,6 +164,8 @@ cask "neo4j"
 cask "nosqlbooster-for-mongodb"
 # App to write, plan, collaborate, and get organized
 cask "notion"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
 # MySQL/MariaDB database management
 cask "sequel-ace"
 # PDF reader and note-taking application
