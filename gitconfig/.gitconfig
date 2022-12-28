@@ -3,3 +3,6 @@
   path = ~/Projects/.gitconfig
 [includeIf "gitdir:~/Projects_neets13/"]
   path = ~/Projects_neets13/.gitconfig
+[user]
+	name = nukopy
+	email = nukopy@gmail.com
