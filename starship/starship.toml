@@ -101,8 +101,9 @@ cherry_pick = "🍒 PICKING"
 [memory_usage]
 disabled = false
 threshold = 30  ## if memory usage is over 30%, show memory usage
-# format = "via $symbol [${ram}( \| ${swap})]($style) "
-symbol = "🐏 "
+# format = 'via $symbol [$ram_pct, $ram \($swap_pct, $swap\) ]($style)'
+format = 'via $symbol [$ram_pct, $ram ]($style)'
+symbol = "🐏"
 style = "bold dimmed green"
 # style = "bold gray"
 
@@ -113,11 +114,11 @@ threshold = 1
 
 [battery]
 disabled = false
-# full_symbol = "🔋"
+# full_symbol = "🔋 "
 charging_symbol = "⚡"
 discharging_symbol = "🔋 "
 [[battery.display]]
-threshold = 70
+threshold = 50
 style = "bold green"
 
 [time]
