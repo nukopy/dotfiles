@@ -246,12 +246,15 @@ alias poetry-req='poetry run pip freeze > ./requirements.txt'
 ## pipenv
 alias penvreq='pipenv lock -r > requirements.txt'
 
-##### TypeScript
+##### TypeScript #####
 ## npx
 alias ts="npx ts-node"
 
 ## yarn
 alias ys="yarn start"
+
+##### Rust #####
+alias rm-rust-pkg-cache="rm -rf ~/.cargo/.package-cache"
 
 ################################
 # other utility aliases
