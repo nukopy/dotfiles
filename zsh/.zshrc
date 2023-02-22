@@ -83,10 +83,8 @@ alias "cd-"="cd -"
 alias cdp="cd ~/Projects"
 alias cdd="cd ~/Projects/dotfiles"
 alias cdz="cd $ZDOTDIR"
-alias cdr="cd ~/Projects/Job/Firms/RICOH"
-alias cdm="cd ~/Projects/MyProjects"
-alias cda="cd ~/Projects/MyProjects/App"
-alias cdc="cd ~/Projects/Academic/ComputerScience"
+alias cdrdev="cd ~/Projects/Job/Firms/RICOH/RICOH_PRISM"
+# alias cdr="cd ..."
 
 # grep
 # alias gr="grep --color"
