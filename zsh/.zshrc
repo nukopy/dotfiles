@@ -25,7 +25,6 @@ eval "$(starship init zsh)"
 export SSLKEYLOGFILE=$HOME/Desktop/tls_key.log
 # "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
-
 # for Git
 # 元の git は /usr/bin/git にあるから，それより早く検索されるようにする
 export PATH="/usr/local/bin:$PATH"
