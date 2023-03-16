@@ -58,8 +58,17 @@ export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
 export PATH="$PATH:$HOME/SDKs/flutter/bin"
 
 # for GCP
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+if [[ $(uname -m) == "x86_64" ]]; then
+    # Intel Mac 用の処理
+    source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+    source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+elif [[ $(uname -m) == "arm64" ]]; then
+    # M1 Mac 用の処理
+    source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+    source '/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+else
+    echo "Unknown architecture"
+fi
 
 ############################################
 # Aliases
