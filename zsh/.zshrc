@@ -3,8 +3,8 @@
 ############################################
 
 # variables
-export DOTDIR="/Users/pyteyon/Projects/dotfiles"
-export HOMEBREW_BREWFILE="/Users/pyteyon/Projects/dotfiles/homebrew/Brewfile"
+export DOTDIR="$HOME/Projects/dotfiles"
+export HOMEBREW_BREWFILE="$HOME/Projects/dotfiles/homebrew/Brewfile"
 
 # load shell keybind
 source $ZDOTDIR/.zshrc.keybind
