@@ -88,7 +88,7 @@ conflicted = "🏳"
 ahead = "⇡"  # unpushed commit
 behind = "😰"
 diverged = "😵"
-stashed = "$"
+stashed = "📦"
 up_to_date = "✓"
 style = "bold red"
 
