@@ -56,6 +56,7 @@ export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
 
 # for the Dart/Flutter SDK
 export PATH="$PATH:$HOME/SDKs/flutter/bin"
+export PATH="$PATH:$HOME/.pub-cache/bin"
 
 # for GCP
 if [[ $(uname -m) == "x86_64" ]]; then
