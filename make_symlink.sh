@@ -15,15 +15,12 @@ ln -sf $HOME/Projects/dotfiles/homebrew/Brewfile ~/.config/brewfile/Brewfile
 # for Xcode
 if [ "$(uname)" == 'Darwin' ]; then
     # backup
-    cp ~/Library/Developer/Xcode/UserData/IDETemplateMacros.plist ~/Projects/dotfiles/xcode/IDETemplateMacros.plist.bk
-    cp -r ~/Library/Developer/Xcode/UserData/KeyBindings ~/Projects/dotfiles/xcode/KeyBindings.bk
-
-    rm -rf ~/Library/Developer/Xcode/UserData/IDETemplateMacros.plist
-    rm -rf ~/Library/Developer/Xcode/UserData/KeyBindings
+    cp ~/Library/Developer/Xcode/UserData/IDETemplateMacros.plist ~/Library/Developer/Xcode/UserData/IDETemplateMacros.plist.bk && rm -rf ~/Library/Developer/Xcode/UserData/IDETemplateMacros.plist
+    cp -r ~/Library/Developer/Xcode/UserData/KeyBindings ~/Library/Developer/Xcode/UserData/KeyBindings.bk && rm -rf ~/Library/Developer/Xcode/UserData/KeyBindings
 
     # create symlink
-    ln -sf ~/Projects/dotfiles/xcode/IDETextMacros.plist ~/Library/Developer/Xcode/UserData/IDETextMacros.plist
-    ln -sf ~/Projects/dotfiles/xcode/KeyBindings ~/Library/Developer/Xcode/UserData/KeyBindings
+    ln -sf ~/Projects/dotfiles/xcode/UserData/IDETemplateMacros.plist ~/Library/Developer/Xcode/UserData/IDETemplateMacros.plist
+    ln -sf ~/Projects/dotfiles/xcode/UserData/KeyBindings ~/Library/Developer/Xcode/UserData/KeyBindings
 fi
 
 exec $SHELL -l  # restart shell
