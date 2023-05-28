@@ -20,6 +20,7 @@ if [ "$(uname)" == 'Darwin' ]; then
 
     # create symlink
     ln -sf ~/Projects/dotfiles/xcode/UserData/IDETemplateMacros.plist ~/Library/Developer/Xcode/UserData/IDETemplateMacros.plist
+    ln -sf ~/Projects/dotfiles/xcode/UserData/IDETextMacros.plist ~/Library/Developer/Xcode/UserData/IDETextMacros.plist
     ln -sf ~/Projects/dotfiles/xcode/UserData/KeyBindings ~/Library/Developer/Xcode/UserData/KeyBindings
 fi
 
