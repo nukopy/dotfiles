@@ -360,4 +360,9 @@ fpath+=~/.zfunc
 # enable zsh command completion(TAB completion)
 # grep, git, man, cd, kill, apt-get, etc...
 autoload -Uz compinit
-compinit
+ADMIN_USER="nukopy"
+if [ "$USER" = "$ADMIN_USER" ]; then
+    compinit -i
+else
+    compinit
+fi
