@@ -7,3 +7,4 @@ source $ZDOTDIR/.zshenv.secret  # read secret environment variables
 
 # load .zshrc
 # .zshrc is automatically loaded when shell starts
+# source $ZDOTDIR/.zshrc
