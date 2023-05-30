@@ -17,10 +17,6 @@ source $ZDOTDIR/.zshrc.keybind
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 
-# for Starship (for shell customize)
-# https://starship.rs/ja-JP/
-eval "$(starship init zsh)"
-
 # for Wireshark
 export SSLKEYLOGFILE=$HOME/Desktop/tls_key.log
 # "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
@@ -35,6 +31,11 @@ export PATH="$HOME/.anyenv/bin:$PATH"
 
 # for Rust
 . "$HOME/.cargo/env"
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# for Starship (for shell customize)
+# https://starship.rs/ja-JP/
+eval "$(starship init zsh)"
 
 # for Golang
 export GOPATH=$(go env GOPATH)
