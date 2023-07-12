@@ -362,6 +362,9 @@ eval "$(gh completion -s zsh)"
 # poetry settings (not for homebrew setup)
 fpath+=~/.zfunc
 
+# for Deno
+fpath=(~/.zsh $fpath)
+
 # enable zsh command completion(TAB completion)
 # grep, git, man, cd, kill, apt-get, etc...
 autoload -Uz compinit
