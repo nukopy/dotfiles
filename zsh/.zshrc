@@ -42,6 +42,10 @@ export GOPATH=$(go env GOPATH)
 export PATH=$PATH:$(go env GOPATH)/bin
 export GO111MODULE=on
 
+# for Deno
+export DENO_INSTALL="/Users/yskokwk-m1max/.deno"
+export PATH="$PATH:$DENO_INSTALL/bin"
+
 # for pyenv
 eval "$(pyenv init -)"
 # export PYENV_VERSION="3.9.5"
