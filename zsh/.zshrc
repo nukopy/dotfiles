@@ -275,8 +275,7 @@ alias rm-rust-pkg-cache="rm -rf ~/.cargo/.package-cache"
 ################################
 
 # general
-alias path="echo $PATH"
-alias fd="open -a Finder"
+alias path="echo $PATH | tr ':' '\n'"
 
 # for applications
 alias cal="open /Users/pyteyon/Applications/Chrome\\ Apps.localized/Google\\ Calendar.app"
