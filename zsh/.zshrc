@@ -1,3 +1,5 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 ############################################
 # init
 ############################################
@@ -39,12 +41,12 @@ eval "$(starship init zsh)"
 
 # for Golang
 export GOPATH=$(go env GOPATH)
-export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$(go env GOPATH)/bin:$PATH
 export GO111MODULE=on
 
 # for Deno
 export DENO_INSTALL="/Users/yskokwk-m1max/.deno"
-export PATH="$PATH:$DENO_INSTALL/bin"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 # for pyenv
 eval "$(pyenv init -)"
@@ -60,8 +62,8 @@ export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
 
 # for the Dart/Flutter SDK
-export PATH="$PATH:$HOME/SDKs/flutter/bin"
-export PATH="$PATH:$HOME/.pub-cache/bin"
+export PATH="$HOME/SDKs/flutter/bin:$PATH"
+export PATH="$HOME/.pub-cache/bin:$PATH"
 
 # for GCP
 if [[ $(uname -m) == "x86_64" ]]; then
@@ -374,3 +376,6 @@ if [ "$USER" = "$ADMIN_USER" ]; then
 else
     compinit
 fi
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
