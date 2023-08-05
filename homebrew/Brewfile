@@ -41,6 +41,8 @@ brew "libyaml"
 brew "make"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
+# Show ps output as a tree
+brew "pstree"
 # Messaging broker
 brew "rabbitmq", restart_service: true
 # Generate type safe Go from SQL
