@@ -1,110 +1,52 @@
-tap "dart-lang/dart"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
-tap "mongodb/brew"
+tap "homebrew/services"
 # All in one for **env
 brew "anyenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Official Amazon AWS command-line interface
-brew "awscli"
-# Get/set bluetooth power and discoverable state
-brew "blueutil"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Software library to render fonts
+brew "freetype"
 # Core application library for C
 brew "glib"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
-brew "clang-format"
+# Cross-platform make
+brew "cmake"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # .NET Core
 brew "dotnet"
-# Library to load and enumerate PKCS#11 modules
-brew "p11-kit"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# OpenType text shaping engine
-brew "harfbuzz"
-# Subtitle renderer for the ASS/SSA subtitle format
-brew "libass"
-# Secure Reliable Transport
-brew "srt"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg@4"
-# GNU debugger
-brew "gdb"
-# Toolkit for image loading and pixel buffer manipulation
-brew "gdk-pixbuf"
 # GitHub command-line tool
 brew "gh"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
-# Fast linters runner for Go
-brew "golangci-lint"
-# Framework for layout and rendering of i18n text
-brew "pango"
-# Library to render SVG files using Cairo
-brew "librsvg"
-# Graph visualization software from AT&T and Bell Labs
-brew "graphviz"
-# CLI wrapper for basic network utilities on macOS - ip command
-brew "iproute2mac"
-# Lightweight and flexible command-line JSON processor
-brew "jq"
-# Lazier way to manage everything docker
-brew "lazydocker"
-# Library for complex text layout
-brew "libraqm"
-# MongoDB CLI enables you to manage your MongoDB in the Cloud
-brew "mongocli"
-# Web server build on top of Libmongoose embedded library
-brew "mongoose"
-# HTTP/2 C Library
-brew "nghttp2"
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
-# Port scanning utility for large networks
-brew "nmap"
-# Friendly PIL fork (Python Imaging Library)
-brew "pillow"
-# Seamless operability between C++11 and Python
-brew "pybind11"
-# Tools for and transforming and inspecting PDF files
-brew "qpdf"
-# Post-processing for scanned/photocopied books
-brew "unpaper"
-# Adds an OCR text layer to scanned PDF files
-brew "ocrmypdf"
-# Development kit for the Java programming language
-brew "openjdk@11"
-# Show ps output as a tree
-brew "pstree"
-# Safe, concurrent, practical language
-brew "rust"
-# Prints a steam locomotive if you type sl instead of ls
-brew "sl"
+# Git extension for versioning large files
+brew "git-lfs"
+# Improved top (interactive process viewer)
+brew "htop"
+# ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+brew "libheif"
+# Library for reading RAW files from digital photo cameras
+brew "libraw"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# YAML Parser
+brew "libyaml"
+# Utility for directing compilation
+brew "make"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Messaging broker
+brew "rabbitmq", restart_service: true
+# Generate type safe Go from SQL
+brew "sqlc"
 # Cross-shell prompt for astronauts
 brew "starship"
-# User interface to the TELNET protocol
-brew "telnet"
-# Display directories as trees (with optional color/HTML output)
-brew "tree"
-# Internet file retriever
-brew "wget"
-# Library to create, extract, and modify Windows Imaging files
-brew "wimlib"
-# This package contains standard utilities for interacting with MongoDB.
-brew "mongodb/brew/mongodb-database-tools"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # View, print, and comment on PDF documents
@@ -113,41 +55,49 @@ cask "adobe-acrobat-reader"
 cask "alfred"
 # Tools for building Android applications
 cask "android-studio"
-# Memory training application
-cask "anki"
+# Audio utility
+cask "background-music"
 # 3D creation suite
 cask "blender"
 # Clipboard extension app
 cask "clipy"
+# Xcode extension for Github Copilot
+cask "copilot-for-xcode"
 # Trains AIs to understand and translate texts
 cask "deepl"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Reimagine your terminal
+cask "fig"
 # Collaborative team software
 cask "figma"
 # Web browser
 cask "firefox"
+# UI toolkit for building applications for mobile, web and desktop
+cask "flutter"
+# Free monospaced font with programming ligatures
 cask "font-fira-code"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 cask "font-noto-sans-gothic"
-# Open-source platform for visualizing and manipulating large graphs
-cask "gephi"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
 cask "google-chrome"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
+# Japanese input software
 cask "google-japanese-ime"
+# Utility to hide menu bar items
+cask "hiddenbar"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Keyboard customizer
 cask "karabiner-elements"
-# Software for Logitech devices
-cask "logitech-options"
+# PDF editor
+cask "master-pdf-editor"
 # Provides updates to various Microsoft products
 cask "microsoft-auto-update"
 # Office suite
@@ -156,37 +106,242 @@ cask "microsoft-office"
 cask "microsoft-teams"
 # Online collaborative whiteboard platform
 cask "miro"
-# Visual tool to design, develop and administer MySQL servers
-cask "mysqlworkbench"
-# Developer IDE or Management Environment for Neo4j instances
-cask "neo4j"
-# GUI tool and IDE for MongoDB
-cask "nosqlbooster-for-mongodb"
-# App to write, plan, collaborate, and get organized
-cask "notion"
-# Move and resize windows using keyboard shortcuts or snap areas
-cask "rectangle"
-# MySQL/MariaDB database management
-cask "sequel-ace"
-# PDF reader and note-taking application
-cask "skim"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
+# Open-source software for live streaming and screen recording
+cask "obs"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# MIDI and OSC Monitor
+cask "protokol"
+# Tool that provides consistent, highly configurable symbols for apps
+cask "sf-symbols"
 # Team communication and collaboration software
 cask "slack"
 # IDE, client, and GUI for MongoDB
 cask "studio-3t"
-# Native GUI tool for relational databases
-cask "tableplus"
 # Tool for creating dynamic digital art
 cask "touchdesigner"
-# Free and open-source OpenVPN client
-cask "tunnelblick"
-# Development environment
-cask "vagrant"
-# Virtualizer for x86 hardware
-cask "virtualbox"
 # Open-source code editor
 cask "visual-studio-code"
-# Network protocol analyzer
-cask "wireshark"
-# Video communication and virtual meeting platform
-cask "zoom"
+# Desktop client for the Zulip team chat platform
+cask "zulip"
+vscode "13xforever.language-x86-64-assembly"
+vscode "42Crunch.vscode-openapi"
+vscode "766b.go-outliner"
+vscode "aaron-bond.better-comments"
+vscode "abdoseadaa.node-js-snippet"
+vscode "aeschli.vscode-css-formatter"
+vscode "ailisp.commonlisp-vscode"
+vscode "akamud.vscode-javascript-snippet-pack"
+vscode "akamud.vscode-theme-onedark"
+vscode "akamud.vscode-theme-onelight"
+vscode "alanz.vscode-hie-server"
+vscode "alber70g.solarized-light-differentiated"
+vscode "alefragnani.rtf"
+vscode "alexisvt.flutter-snippets"
+vscode "alexzshl.badges-snippets"
+vscode "andischerer.theme-atom-one-dark"
+vscode "aregghazaryan.glass-ui"
+vscode "azemoh.one-monokai"
+vscode "azemoh.theme-onedark"
+vscode "bajdzis.vscode-database"
+vscode "batisteo.vscode-django"
+vscode "be5invis.toml"
+vscode "bibhasdn.django-html"
+vscode "bibhasdn.django-snippets"
+vscode "bierner.markdown-mermaid"
+vscode "bmewburn.vscode-intelephense-client"
+vscode "bpruitt-goddard.mermaid-markdown-syntax-highlighting"
+vscode "burkeholland.simple-timer"
+vscode "charliermarsh.ruff"
+vscode "christian-kohler.path-intellisense"
+vscode "chrmarti.regex"
+vscode "chrmarti.ssh"
+vscode "coddx.coddx-alpha"
+vscode "codezombiech.gitignore"
+vscode "cometeer.spacemacs"
+vscode "cschlosser.doxdocgen"
+vscode "cstrap.python-snippets"
+vscode "daniel-lvovsky.mintlight-theme"
+vscode "darkriszty.markdown-table-prettify"
+vscode "Dart-Code.dart-code"
+vscode "Dart-Code.flutter"
+vscode "DavidAnson.vscode-markdownlint"
+vscode "dbaeumer.vscode-eslint"
+vscode "denoland.vscode-deno"
+vscode "dhedgecock.radical-vscode"
+vscode "dnicolson.binary-plist"
+vscode "donjayamanne.githistory"
+vscode "donjayamanne.python-environment-manager"
+vscode "donjayamanne.python-extension-pack"
+vscode "dsznajder.es7-react-js-snippets"
+vscode "eamodio.gitlens"
+vscode "ecmel.vscode-html-css"
+vscode "EditorConfig.EditorConfig"
+vscode "emilast.LogFileHighlighter"
+vscode "enkia.tokyo-night"
+vscode "esbenp.prettier-vscode"
+vscode "EvanZ63.fallout-sounds"
+vscode "felipecaputo.git-project-manager"
+vscode "fisheva.eva-theme"
+vscode "gerane.Theme-Abyss"
+vscode "GitHub.copilot"
+vscode "GitHub.copilot-chat"
+vscode "GitHub.copilot-labs"
+vscode "GitHub.github-vscode-theme"
+vscode "github.vscode-github-actions"
+vscode "GitHub.vscode-pull-request-github"
+vscode "goessner.mdmath"
+vscode "golang.go"
+vscode "GrapeCity.gc-excelviewer"
+vscode "GraphQL.vscode-graphql"
+vscode "GraphQL.vscode-graphql-execution"
+vscode "GraphQL.vscode-graphql-syntax"
+vscode "Gruntfuggly.todo-tree"
+vscode "hars.CppSnippets"
+vscode "hbenl.vscode-test-explorer"
+vscode "hediet.vscode-drawio"
+vscode "HookyQR.beautify"
+vscode "hoovercj.haskell-linter"
+vscode "hoovercj.vscode-power-mode"
+vscode "HTMLHint.vscode-htmlhint"
+vscode "huntertran.auto-markdown-toc"
+vscode "IBM.output-colorizer"
+vscode "idleberg.badges"
+vscode "Increments.qiita"
+vscode "inu1255.easy-snippet"
+vscode "IronGeek.vscode-env"
+vscode "ivhernandez.vscode-plist"
+vscode "James-Yu.latex-workshop"
+vscode "jamesmaj.easy-icons"
+vscode "jaredready.ccl-language-support"
+vscode "jcanero.hoogle-vscode"
+vscode "jebbs.plantuml"
+vscode "jeff-hykin.better-cpp-syntax"
+vscode "jeng.aural-coding-vscode"
+vscode "josetr.cmake-language-support-vscode"
+vscode "justusadam.language-haskell"
+vscode "karyfoundation.racket"
+vscode "KevinRose.vsc-python-indent"
+vscode "kiteco.kite"
+vscode "kleber-swf.unity-code-snippets"
+vscode "KnisterPeter.vscode-github"
+vscode "lfs.vscode-emacs-friendly"
+vscode "littlefoxteam.vscode-python-test-adapter"
+vscode "lkytal.FlatUI"
+vscode "magicstack.MagicPython"
+vscode "marabesi.php-import-checker"
+vscode "marp-team.marp-vscode"
+vscode "marqu3s.aurora-x"
+vscode "matangover.mypy"
+vscode "mattn.Lisp"
+vscode "mattogodoy.hacker-sounds"
+vscode "maximetinu.identical-sublime-monokai-csharp-theme-colorizer"
+vscode "mechatroner.rainbow-csv"
+vscode "mhutchie.git-graph"
+vscode "mikestead.dotenv"
+vscode "mlyz-main.eyes-theme"
+vscode "ModoNoob.vscode-hipster-theme"
+vscode "monokai.theme-monokai-pro-vscode"
+vscode "mosapride.zenkaku"
+vscode "mphasiswyde.ewamvscadaptor"
+vscode "mrmlnc.vscode-duplicate"
+vscode "mrpbennett.atlantic-night"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-dotnettools.csharp"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-python.isort"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode-remote.remote-wsl"
+vscode "ms-vscode-remote.vscode-remote-extensionpack"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.hexeditor"
+vscode "ms-vscode.live-server"
+vscode "ms-vscode.makefile-tools"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-server"
+vscode "ms-vscode.test-adapter-converter"
+vscode "ms-vscode.vscode-typescript-next"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "mshr-h.veriloghdl"
+vscode "msyrus.go-doc"
+vscode "mtxr.sqltools"
+vscode "Nash.awesome-flutter-snippets"
+vscode "njpwerner.autodocstring"
+vscode "njqdev.vscode-python-typehint"
+vscode "nukopy.python-string-markdown"
+vscode "oderwat.indent-rainbow"
+vscode "p1c2u.docker-compose"
+vscode "pmsandhu.solarized-light-alternate"
+vscode "Prisma.prisma"
+vscode "ptweir.python-string-sql"
+vscode "quicktype.quicktype"
+vscode "RandomFractalsInc.vscode-data-preview"
+vscode "redhat.java"
+vscode "redhat.vscode-yaml"
+vscode "RickyWhite.python-template-snippets"
+vscode "rust-lang.rust-analyzer"
+vscode "sadeghpm.sql-snippets"
+vscode "satokaz.vscode-bs-ctrlchar-remover"
+vscode "sbovyrin.semantic-colors"
+vscode "scala-lang.scala"
+vscode "scalameta.metals"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "shobhitsharma.github-ui"
+vscode "SimonSiefke.svg-preview"
+vscode "sjhuangx.vscode-scheme"
+vscode "slevesque.vscode-3dviewer"
+vscode "softwaredotcom.swdc-vscode"
+vscode "sswg.swift-lang"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "svelte.svelte-vscode"
+vscode "tamasfe.even-better-toml"
+vscode "tauri-apps.tauri-vscode"
+vscode "tgriesser.avro-schemas"
+vscode "thenikso.github-plus-theme"
+vscode "thomaspink.theme-github"
+vscode "ThreadHeap.serverless-ide-vscode"
+vscode "TimonVS.ReactSnippetsStandard"
+vscode "timreilly.typewriter-sounds"
+vscode "tombonnike.vscode-status-bar-format-toggle"
+vscode "tomoki1207.pdf"
+vscode "tomoyukim.vscode-mermaid-editor"
+vscode "torn4dom4n.latex-support"
+vscode "trond-snekvik.simple-rst"
+vscode "twxs.cmake"
+vscode "usernamehw.errorlens"
+vscode "vadimcn.vscode-lldb"
+vscode "Vans.haskero"
+vscode "vigoo.stylish-haskell"
+vscode "VisualStudioExptTeam.intellicode-api-usage-examples"
+vscode "VisualStudioExptTeam.vscodeintellicode"
+vscode "vscjava.vscode-java-debug"
+vscode "vscjava.vscode-java-dependency"
+vscode "vscjava.vscode-java-pack"
+vscode "vscjava.vscode-java-test"
+vscode "vscjava.vscode-maven"
+vscode "vscode-icons-team.vscode-icons"
+vscode "wholroyd.jinja"
+vscode "withfig.fig"
+vscode "wmaurer.vscode-jumpy"
+vscode "xaver.clang-format"
+vscode "xshrim.txt-syntax"
+vscode "xyc.vscode-mdx-preview"
+vscode "yzane.markdown-pdf"
+vscode "yzhang.markdown-all-in-one"
+vscode "zhuangtongfa.material-theme"
+vscode "Zignd.html-css-class-completion"
+vscode "zxh404.vscode-proto3"
