@@ -1,11 +1,9 @@
-# ディレクトリ毎に分ける
-[includeIf "gitdir:~/Projects/"]
-  path = ~/Projects/.gitconfig
-[includeIf "gitdir:~/Projects_neets13/"]
-  path = ~/Projects_neets13/.gitconfig
 [user]
 	name = nukopy
 	email = nukopy@gmail.com
+[core]
+	# グローバルな .gitignore
+	excludesfile = ~/.gitignore_global
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
