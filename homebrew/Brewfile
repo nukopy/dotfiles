@@ -21,6 +21,8 @@ brew "cmake"
 brew "direnv"
 # .NET Core
 brew "dotnet"
+# Modern replacement for 'ls'
+brew "exa"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # GitHub command-line tool
