@@ -12,7 +12,7 @@ Dotfiles repository to get my work environment ready in just a few moments.
 
 ```bash
 cd dotfiles
-bash bootstrap.sh
+bash bootstrap.bash
 ```
 
 ## References
