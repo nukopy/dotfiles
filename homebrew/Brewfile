@@ -1,7 +1,5 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 tap "homebrew/services"
 # All in one for **env
 brew "anyenv"
@@ -51,6 +49,8 @@ brew "rabbitmq", restart_service: true
 brew "sqlc"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # View, print, and comment on PDF documents
@@ -128,6 +128,8 @@ cask "studio-3t"
 cask "touchdesigner"
 # Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
 vscode "13xforever.language-x86-64-assembly"
@@ -152,6 +154,7 @@ vscode "azemoh.theme-onedark"
 vscode "bajdzis.vscode-database"
 vscode "batisteo.vscode-django"
 vscode "be5invis.toml"
+vscode "benjaminbenais.copilot-theme"
 vscode "bibhasdn.django-html"
 vscode "bibhasdn.django-snippets"
 vscode "bierner.markdown-mermaid"
@@ -255,6 +258,8 @@ vscode "mrpbennett.atlantic-night"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-dotnettools.csharp"
 vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-python.black-formatter"
+vscode "ms-python.flake8"
 vscode "ms-python.isort"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"

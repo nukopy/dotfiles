@@ -82,7 +82,6 @@ make_symlinks_macos() {
 
   echo ""
   echo "Please restart your shell, \"exec \$SHELL -l\"."
-
 }
 
 # ------------------------------
