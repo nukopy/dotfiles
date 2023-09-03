@@ -449,8 +449,10 @@ colors:
 # Live config reload (changes require restart)
 #live_config_reload: true
 
+# --------------------------------------------------
 # Shell
-#
+# --------------------------------------------------
+
 # You can set `shell.program` to the path of your favorite shell, e.g.
 # `/bin/fish`. Entries in `shell.args` are passed unmodified as arguments to the
 # shell.
@@ -463,14 +465,23 @@ colors:
 #  args:
 #    - --login
 
+# --------------------------------------------------
 # Startup directory
-#
+# --------------------------------------------------
+
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
 #working_directory: None
 
+# --------------------------------------------------
 # Offer IPC using `alacritty msg` (unix only)
+# --------------------------------------------------
+
 #ipc_socket: true
+
+# --------------------------------------------------
+# Mouse settings
+# --------------------------------------------------
 
 #mouse:
 # Click settings
@@ -484,8 +495,10 @@ colors:
 # If this is `true`, the cursor is temporarily hidden when typing.
 #hide_when_typing: false
 
-# Hints
-#
+# --------------------------------------------------
+# Terminal Hints
+# --------------------------------------------------
+
 # Terminal hints can be used to find text or hyperlink in the visible part of
 # the terminal and pipe it to other applications.
 #hints:
@@ -567,8 +580,10 @@ colors:
 #  - { mouse: Right,  mods: Control, action: ExpandSelection }
 #  - { mouse: Middle, mode: ~Vi,     action: PasteSelection  }
 
+# --------------------------------------------------
 # Key bindings
-#
+# --------------------------------------------------
+
 # Key bindings are specified as a list of objects. For example, this is the
 # default paste binding:
 #
@@ -888,13 +903,20 @@ colors:
 #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
 #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
 
-#debug:
+# --------------------------------------------------
+# Debug settings
+# --------------------------------------------------
+
+# debug:
 # Display the time it takes to redraw each frame.
-#render_timer: false
+# render_timer: false
+
+# --------------------------------------------------
+# Logging settings
+# --------------------------------------------------
 
 # Keep the log file after quitting Alacritty.
-#persistent_logging: false
-
+# persistent_logging: false
 # Log level
 #
 # Values for `log_level`:
@@ -913,7 +935,7 @@ colors:
 #renderer: None
 
 # Print all received window events.
-#print_events: false
+# print_events: false
 
 # Highlight window damage information.
 #highlight_damage: false
