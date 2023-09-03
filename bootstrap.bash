@@ -58,6 +58,7 @@ make_symlinks_macos() {
   ln -sf $HOME/Projects/dotfiles/latex/.latexmkrc ~/.latexmkrc
   ln -sf $HOME/Projects/dotfiles/karabiner ~/.config/karabiner
   ln -sf $HOME/Projects/dotfiles/direnv/.direnvrc ~/.direnvrc
+  ln -sf $HOME/Projects/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
   ln -sf $HOME/Projects/dotfiles/starship/starship.toml ~/.config/starship.toml
   ln -sf $HOME/Projects/dotfiles/spacemacs/.spacemacs ~/.spacemacs
   ln -sf $HOME/Projects/dotfiles/homebrew/Brewfile ~/.Brewfile
