@@ -87,7 +87,8 @@ fi
 ################################
 
 # ls
-alias la="ls -l -a -G"  # -G is a color option on only macOS
+alias ls="exa"  # https://github.com/ogham/exa
+alias la="ls -l -a -G -h"  # -G is a color option on only macOS
 # alias la="ls -l -a --color=auto"  # a color option on Linux
 
 # cd
