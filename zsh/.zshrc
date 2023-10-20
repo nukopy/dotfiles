@@ -1,5 +1,6 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+
 ############################################
 # init
 ############################################
@@ -77,6 +78,9 @@ elif [[ $(uname -m) == "arm64" ]]; then
 else
     echo "Unknown architecture"
 fi
+
+# for JetBrains
+export PATH="$HOME/Library/Application Support/JetBrains/Toolbox/bin:$PATH"
 
 ############################################
 # Aliases
