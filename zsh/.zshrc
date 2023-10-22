@@ -28,6 +28,9 @@ export SSLKEYLOGFILE=$HOME/Desktop/tls_key.log
 # 元の git は /usr/bin/git にあるから，それより早く検索されるようにする
 export PATH="/usr/local/bin:$PATH"
 
+# for Docker
+export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+
 # for anyenv
 eval "$(anyenv init -)"
 export PATH="$HOME/.anyenv/bin:$PATH"
