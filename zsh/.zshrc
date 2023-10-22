@@ -29,7 +29,7 @@ export SSLKEYLOGFILE=$HOME/Desktop/tls_key.log
 export PATH="/usr/local/bin:$PATH"
 
 # for Docker
-export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+export PATH="$HOME/.docker/bin:$PATH"
 
 # for anyenv
 eval "$(anyenv init -)"
