@@ -62,8 +62,8 @@ export PATH="$HOME/.poetry/bin:$PATH"
 # for Java
 # XX にバージョン番号を入れる
 # export JAVA_HOME=`usr/libexec/java_home -v XX`
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-export CPPFLAGS="-I/usr/local/opt/openjdk@11/include"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 
 # for the Dart/Flutter SDK
 export PATH="$HOME/SDKs/flutter/bin:$PATH"
