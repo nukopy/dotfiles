@@ -31,10 +31,6 @@ export PATH="/usr/local/bin:$PATH"
 # for Docker
 export PATH="$HOME/.docker/bin:$PATH"
 
-# for anyenv
-eval "$(anyenv init -)"
-export PATH="$HOME/.anyenv/bin:$PATH"
-
 # for Rust
 . "$HOME/.cargo/env"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -51,13 +47,6 @@ export GO111MODULE=on
 # for Deno
 export DENO_INSTALL="/Users/yskokwk-m1max/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
-
-# for pyenv
-eval "$(pyenv init -)"
-# export PYENV_VERSION="3.9.5"
-
-# for poetry
-export PATH="$HOME/.poetry/bin:$PATH"
 
 # for Java
 # XX にバージョン番号を入れる
