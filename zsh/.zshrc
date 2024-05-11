@@ -243,20 +243,6 @@ alias jn='ipython notebook --ip=127.0.0.1'
 ## jupyter lab
 alias jl='jupyter lab'
 
-## venv
-alias pyv='python -m venv venv'
-
-## start up project with venv, poetry
-alias start-pyproject="source $PYDOTDIR/bootstrap-pyproject.sh"
-alias clean-pyproject="rm -rf ./venv; rm ./pyproject.toml ./poetry.lock;"
-
-## poetry
-alias poetry-dev='poetry add --dev black flake8 pytest ipython jupyterlab'
-alias poetry-req='poetry run pip freeze > ./requirements.txt'
-
-## pipenv
-alias penvreq='pipenv lock -r > requirements.txt'
-
 ##### TypeScript #####
 ## npx
 alias ts="npx ts-node"
