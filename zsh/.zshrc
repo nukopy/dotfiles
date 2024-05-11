@@ -94,7 +94,7 @@ export PATH="$HOME/Library/Application Support/JetBrains/Toolbox/bin:$PATH"
 ################################
 
 # ls
-alias ls="exa"  # https://github.com/ogham/exa
+alias ls="eza"  # https://github.com/ogham/exa
 alias la="ls -l -a -h"  # -G is a color option on only macOS
 # alias la="ls -l -a --color=auto"  # a color option on Linux
 
