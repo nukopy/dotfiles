@@ -8,6 +8,22 @@ Dotfiles repository to get my work environment ready in just a few moments.
 - [ ] Linux (Ubuntu)
 - [ ] Windows
 
+## Requirements
+
+### macOS
+
+- macOS Command Line Tools
+- Homebrew
+- Xcode
+
+### Linux
+
+TODO
+
+### Windows
+
+TODO
+
 ## Setup
 
 ```bash
