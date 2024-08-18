@@ -55,6 +55,7 @@ make_symlinks_macos() {
   ln -sf $HOME/Projects/dotfiles/gitconfig/.gitconfig ~/.gitconfig
   ln -sf $HOME/Projects/dotfiles/gitconfig/.gitignore_global ~/.gitignore_global
   ln -sf $HOME/Projects/dotfiles/.zshenv.home ~/.zshenv
+  ln -s ~/Projects/dotfiles/nvim ~/.config/nvim
   ln -sf $HOME/Projects/dotfiles/latex/.latexmkrc ~/.latexmkrc
   ln -sf $HOME/Projects/dotfiles/karabiner ~/.config/karabiner
   ln -sf $HOME/Projects/dotfiles/direnv/.direnvrc ~/.direnvrc

@@ -48,6 +48,11 @@ export GO111MODULE=on
 export DENO_INSTALL="/Users/yskokwk-m1max/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+# for nvm (Node.js)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # for Java
 # XX にバージョン番号を入れる
 # export JAVA_HOME=`usr/libexec/java_home -v XX`
