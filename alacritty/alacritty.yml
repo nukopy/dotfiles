@@ -462,11 +462,12 @@ colors:
 #   - (Windows) powershell
 shell:
   program: /opt/homebrew/bin/nu
+  # program: /bin/zsh
 #  args:
 #    - --login
 
 # --------------------------------------------------
-# Startup directory
+# Startup directory and working directory
 # --------------------------------------------------
 
 # Directory the shell is started in. If this is unset, or `None`, the working
