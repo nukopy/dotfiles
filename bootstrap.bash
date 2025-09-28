@@ -65,9 +65,7 @@ make_symlinks_macos() {
 
   # for ~/.config/*
   mkdir -p ~/.config/nvim
-  ln -s ~/Projects/dotfiles/nvim ~/.config/nvim
-  
-  
+  ln -sf ~/Projects/dotfiles/nvim ~/.config/nvim
   mkdir -p ~/.config/alacritty
   ln -sf $HOME/Projects/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
   mkdir -p ~/.config/starship
