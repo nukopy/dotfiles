@@ -70,6 +70,14 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 export PATH="$HOME/SDKs/flutter/bin:$PATH"
 export PATH="$HOME/.pub-cache/bin:$PATH"
 
+# for Ruby installed by Homebrew
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+
+# for rbenv (priority is higher than Homebrew's Ruby)
+export PATH="$HOME/.rbenv/shims:$PATH"
+eval "$(/opt/homebrew/bin/rbenv init - zsh)"
+
 # for GCP
 if [[ $(uname -m) == "x86_64" ]]; then
     # Intel Mac 用の処理
