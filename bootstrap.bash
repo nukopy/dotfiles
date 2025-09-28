@@ -55,7 +55,7 @@ make_symlinks_macos() {
   ln -sf $HOME/Projects/dotfiles/gitconfig/.gitconfig ~/.gitconfig
   ln -sf $HOME/Projects/dotfiles/gitconfig/.gitignore_global ~/.gitignore_global
   ln -sf $HOME/Projects/dotfiles/.zshenv.home ~/.zshenv
-  ln -sf $HOME/Projects/dotfiles/.zshrc ~/.zshrc
+  ln -sf $HOME/Projects/dotfiles/zsh/.zshrc ~/.zshrc
   ln -sf $HOME/Projects/dotfiles/latex/.latexmkrc ~/.latexmkrc
   ln -sf $HOME/Projects/dotfiles/direnv/.direnvrc ~/.direnvrc
   ln -sf $HOME/Projects/dotfiles/spacemacs/.spacemacs ~/.spacemacs
