@@ -52,6 +52,8 @@ make_symlinks_macos() {
   echo "DOTDIR: $DOTDIR"
 
   set -ex
+
+  # for ~/*
   ln -sf $HOME/Projects/dotfiles/gitconfig/.gitconfig ~/.gitconfig
   ln -sf $HOME/Projects/dotfiles/gitconfig/.gitignore_global ~/.gitignore_global
   ln -sf $HOME/Projects/dotfiles/.zshenv.home ~/.zshenv
