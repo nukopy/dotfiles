@@ -45,13 +45,20 @@ export PATH=$(go env GOPATH)/bin:$PATH
 export GO111MODULE=on
 
 # for Deno
-export DENO_INSTALL="/Users/nukopy/.deno"
+export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 # for nvm (Node.js)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# for pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 
 # for Java
 # XX にバージョン番号を入れる
@@ -62,6 +69,14 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 # for the Dart/Flutter SDK
 export PATH="$HOME/SDKs/flutter/bin:$PATH"
 export PATH="$HOME/.pub-cache/bin:$PATH"
+
+# for Ruby installed by Homebrew
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+
+# for rbenv (priority is higher than Homebrew's Ruby)
+export PATH="$HOME/.rbenv/shims:$PATH"
+eval "$(/opt/homebrew/bin/rbenv init - zsh)"
 
 # for GCP
 if [[ $(uname -m) == "x86_64" ]]; then
@@ -370,3 +385,6 @@ eval "$(uvx --generate-shell-completion zsh)"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+
+# for Kiro
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"

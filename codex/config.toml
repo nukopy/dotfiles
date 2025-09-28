@@ -1,0 +1,37 @@
+model = "gpt-5-codex"
+model_reasoning_effort = "high"
+hide_agent_reasoning = true
+
+# https://github.com/openai/codex/blob/main/docs/config.md#approval_policy
+approval_policy = "on-request"
+
+network_access = true
+notify = ["bash", "-lc", "afplay /System/Library/Sounds/Ping.aiff"]
+
+[tools]
+web_search = true
+
+[mcp_servers.context7]
+command = "bunx"
+args = ["-y", "@upstash/context7-mcp@latest"]
+
+[mcp_servers.chrome-devtools]
+command = "bunx"
+args = ["-y", "chrome-devtools-mcp@latest"]
+
+[mcp_servers.serena]
+command = "uvx"
+args = [
+    "--from",
+    "git+https://github.com/oraios/serena",
+    "serena",
+    "start-mcp-server",
+    "--context",
+    "codex",
+    # "--enable-web-dashboard=false",
+]
+
+# [mcp_servers.figma]
+# startup_timeout_ms = 5_000
+# command = "bunx"
+# args = ["-y", "mcp-remote", "http://127.0.0.1:3845/sse"]

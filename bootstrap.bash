@@ -52,20 +52,22 @@ make_symlinks_macos() {
   echo "DOTDIR: $DOTDIR"
 
   set -ex
+
+  # for ~/*
   ln -sf $HOME/Projects/dotfiles/gitconfig/.gitconfig ~/.gitconfig
   ln -sf $HOME/Projects/dotfiles/gitconfig/.gitignore_global ~/.gitignore_global
   ln -sf $HOME/Projects/dotfiles/.zshenv.home ~/.zshenv
-  ln -sf $HOME/Projects/dotfiles/.zshrc ~/.zshrc
+  ln -sf $HOME/Projects/dotfiles/zsh/.zshrc ~/.zshrc
   ln -sf $HOME/Projects/dotfiles/latex/.latexmkrc ~/.latexmkrc
   ln -sf $HOME/Projects/dotfiles/direnv/.direnvrc ~/.direnvrc
   ln -sf $HOME/Projects/dotfiles/spacemacs/.spacemacs ~/.spacemacs
   ln -sf $HOME/Projects/dotfiles/homebrew/Brewfile ~/.Brewfile
+  ln -sf $HOME/Projects/dotfiles/codex/config.toml ~/.codex/config.toml
+  ln -sf $HOME/Projects/dotfiles/codex/AGENTS.md ~/.codex/AGENTS.md
 
   # for ~/.config/*
   mkdir -p ~/.config/nvim
-  ln -s ~/Projects/dotfiles/nvim ~/.config/nvim
-  mkdir -p ~/.config/karabiner
-  ln -sf $HOME/Projects/dotfiles/karabiner ~/.config/karabiner
+  ln -sf ~/Projects/dotfiles/nvim ~/.config/nvim
   mkdir -p ~/.config/alacritty
   ln -sf $HOME/Projects/dotfiles/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
   mkdir -p ~/.config/starship
