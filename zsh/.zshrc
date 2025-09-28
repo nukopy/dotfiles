@@ -45,7 +45,7 @@ export PATH=$(go env GOPATH)/bin:$PATH
 export GO111MODULE=on
 
 # for Deno
-export DENO_INSTALL="/Users/nukopy/.deno"
+export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 # for nvm (Node.js)
