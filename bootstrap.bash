@@ -62,6 +62,8 @@ make_symlinks_macos() {
   ln -sf $HOME/Projects/dotfiles/direnv/.direnvrc ~/.direnvrc
   ln -sf $HOME/Projects/dotfiles/spacemacs/.spacemacs ~/.spacemacs
   ln -sf $HOME/Projects/dotfiles/homebrew/Brewfile ~/.Brewfile
+  ln -sf $HOME/Projects/dotfiles/codex/config.toml ~/.codex/config.toml
+  ln -sf $HOME/Projects/dotfiles/codex/AGENTS.md ~/.codex/AGENTS.md
 
   # for ~/.config/*
   mkdir -p ~/.config/nvim
