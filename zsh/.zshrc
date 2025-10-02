@@ -274,6 +274,14 @@ alias ys="yarn start"
 alias rm-rust-pkg-cache="rm -rf ~/.cargo/.package-cache"
 
 ################################
+# alias for coding agents
+################################
+
+# for Codex
+alias cdd="codex --dangerously-bypass-approvals-and-sandbox"
+alias cddr="codex --dangerously-bypass-approvals-and-sandbox -- --resume"
+
+################################
 # other utility aliases
 ################################
 
