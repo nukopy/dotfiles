@@ -1,0 +1,44 @@
+{
+	"mcpServers": {
+		"context7": {
+			"command": "bunx",
+			"args": ["-y", "@upstash/context7-mcp@latest"]
+		},
+		"chrome-devtools": {
+			"command": "bunx",
+			"args": ["-y", "chrome-devtools-mcp@latest"]
+		},
+		"serena": {
+			"command": "uvx",
+			"args": [
+				"--from",
+				"git+https://github.com/oraios/serena",
+				"serena",
+				"start-mcp-server",
+				"--context",
+				"codex",
+				"--enable-web-dashboard=false"
+			]
+		},
+		"terraform": {
+			"command": "docker",
+			"args": ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"],
+			"startupTimeoutMs": 10000
+		},
+		"awslabs-terraform-mcp-server": {
+			"command": "uvx",
+			"args": ["awslabs.terraform-mcp-server@latest"],
+			"env": {
+				"FASTMCP_LOG_LEVEL": "ERROR"
+			}
+		},
+		"awslabs-aws-documentation-mcp-server": {
+			"command": "uvx",
+			"args": ["awslabs.aws-documentation-mcp-server@latest"],
+			"env": {
+				"FASTMCP_LOG_LEVEL": "ERROR",
+				"AWS_DOCUMENTATION_PARTITION": "aws"
+			}
+		}
+	}
+}
