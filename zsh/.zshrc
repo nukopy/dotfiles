@@ -367,6 +367,9 @@ eval "$(direnv hook zsh)"
 # GitHub CLI
 eval "$(gh completion -s zsh)"
 
+# for mise
+eval "$(mise activate zsh)"
+
 ############################################
 # zsh command completion
 ############################################
