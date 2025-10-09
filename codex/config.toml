@@ -28,10 +28,35 @@ args = [
     "start-mcp-server",
     "--context",
     "codex",
-    # "--enable-web-dashboard=false",
+    "--enable-web-dashboard=false",
 ]
 
 # [mcp_servers.figma]
 # startup_timeout_ms = 5_000
 # command = "bunx"
 # args = ["-y", "mcp-remote", "http://127.0.0.1:3845/sse"]
+
+# ------------------------------------------------------------
+# for cloud platform
+# ------------------------------------------------------------
+
+# Terraform
+[mcp_servers.terraform]
+# CAUTION: Before running `codex` commands, you'd better run `docker run -i --rm hashicorp/terraform-mcp-server` to install the server on your local machine.
+command = "docker"
+args = ["run", "-i", "--rm", "hashicorp/terraform-mcp-server"]
+startup_timeout_ms = 10_000
+
+# AWS Terraform MCP server
+# CAUTION: Before running `codex` commands, you'd better run `uvx awslabs.terraform-mcp-server@latest` to install the server on your local machine.
+[mcp_servers.awslabs-terraform-mcp-server]
+command = "uvx"
+args = ["awslabs.terraform-mcp-server@latest"]
+env = { "FASTMCP_LOG_LEVEL" = "ERROR" }
+
+# AWS Documentation MCP server
+# CAUTION: Before running `codex` commands, you'd better run `uvx awslabs.aws-documentation-mcp-server@latest` to install the server on your local machine.
+[mcp_servers.awslabs-aws-documentation-mcp-server]
+command = "uvx"
+args = ["awslabs.aws-documentation-mcp-server@latest"]
+env = { "FASTMCP_LOG_LEVEL" = "ERROR", "AWS_DOCUMENTATION_PARTITION" = "aws" }
