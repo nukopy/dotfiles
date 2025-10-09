@@ -62,8 +62,14 @@ make_symlinks_macos() {
   ln -sf $HOME/Projects/dotfiles/direnv/.direnvrc ~/.direnvrc
   ln -sf $HOME/Projects/dotfiles/spacemacs/.spacemacs ~/.spacemacs
   ln -sf $HOME/Projects/dotfiles/homebrew/Brewfile ~/.Brewfile
+
+  # for Codex
   ln -sf $HOME/Projects/dotfiles/codex/config.toml ~/.codex/config.toml
   ln -sf $HOME/Projects/dotfiles/codex/AGENTS.md ~/.codex/AGENTS.md
+
+  # for Claude Code
+  ln -sf $HOME/Projects/dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md
+  ln -sf $HOME/Projects/dotfiles/claude/mcp.json ~/.claude/mcp.json
 
   # for ~/.config/*
   mkdir -p ~/.config/nvim
