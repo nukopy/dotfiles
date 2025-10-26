@@ -70,6 +70,10 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
 export PATH="$HOME/SDKs/flutter/bin:$PATH"
 export PATH="$HOME/.pub-cache/bin:$PATH"
 
+# for Python
+# for uv
+export PATH="$HOME/.local/bin:$PATH"
+
 # for Ruby installed by Homebrew
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
