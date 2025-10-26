@@ -378,6 +378,28 @@ eval "$(mise activate zsh)"
 # zsh command completion
 ############################################
 
+# 補完系
+setopt always_last_prompt # 補完でプロンプト位置を保持
+setopt auto_list # 曖昧補完
+setopt auto_menu # 補完キー（Tab）連打で補完を順に表示
+setopt auto_cd # cdコマンドの保管
+setopt auto_param_keys # カッコなどを補完
+setopt correct_all # typoを検出
+setopt extended_glob # globを使用
+setopt list_types # 候補にファイルの種別を表示
+
+# 色つきの補完
+zstyle ':completion:*' list-colors 'di=36' 'ex=31' 'ln=35'
+
+# 補完候補をカーソルで選択できる
+zstyle ':completion:*:default' menu select=1
+
+# makeFileの補完
+zstyle ':completion:*:*:make:*' tag-order 'targets'
+
+# 区切り文字以外として扱う文字のリスト
+export WORDCHARS='*?_.[];!#$%^{}<>'
+
 # poetry settings (not for homebrew setup)
 fpath+=~/.zfunc
 
