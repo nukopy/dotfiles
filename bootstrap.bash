@@ -63,6 +63,9 @@ make_symlinks_macos() {
   ln -sf $HOME/Projects/dotfiles/spacemacs/.spacemacs ~/.spacemacs
   ln -sf $HOME/Projects/dotfiles/homebrew/Brewfile ~/.Brewfile
 
+  # for Docker
+  ln -sf $HOME/Projects/dotfiles/docker/config.json ~/.docker/config.json
+
   # for Codex
   ln -sf $HOME/Projects/dotfiles/codex/config.toml ~/.codex/config.toml
   ln -sf $HOME/Projects/dotfiles/codex/AGENTS.md ~/.codex/AGENTS.md
