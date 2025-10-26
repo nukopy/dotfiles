@@ -394,7 +394,7 @@ zstyle ':completion:*' list-colors 'di=36' 'ex=31' 'ln=35'
 # 補完候補をカーソルで選択できる
 zstyle ':completion:*:default' menu select=1
 
-# makeFileの補完
+# Makefile の補完
 zstyle ':completion:*:*:make:*' tag-order 'targets'
 
 # 区切り文字以外として扱う文字のリスト
