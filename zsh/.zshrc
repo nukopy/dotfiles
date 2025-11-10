@@ -282,8 +282,12 @@ alias rm-rust-pkg-cache="rm -rf ~/.cargo/.package-cache"
 ################################
 
 # for Codex
-alias cdd="codex --dangerously-bypass-approvals-and-sandbox"
-alias cddr="codex --dangerously-bypass-approvals-and-sandbox -- --resume"
+alias codd="codex --dangerously-bypass-approvals-and-sandbox"
+alias coddr="codex --dangerously-bypass-approvals-and-sandbox -- --resume"
+
+# for Claude
+alias cldd="claude --allow-dangerously-skip-permissions"
+alias clddr="claude --allow-dangerously-skip-permissions --resume"
 
 ################################
 # other utility aliases
