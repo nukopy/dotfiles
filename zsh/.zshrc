@@ -178,7 +178,7 @@ alias gpod="git push origin develop"
 alias gfmms="git fetch && git merge origin/master"
 alias gfmmn="git fetch && git merge origin/main"
 alias gfmd="git fetch && git merge origin/develop"
-alias grs="git reset --soft @^"
+alias grs="git reset --soft @\^"
 alias gs="git status"
 alias gst="git stash"
 gstpop () {
