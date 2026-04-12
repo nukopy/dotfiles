@@ -295,6 +295,7 @@ alias clddr="claude --mcp-config=$HOME/.claude/mcp.json --allow-dangerously-skip
 
 # general
 alias path="echo $PATH | tr ':' '\n'"
+alias rm="trash -v"
 
 # for applications
 alias cal="open /Users/pyteyon/Applications/Chrome\\ Apps.localized/Google\\ Calendar.app"
