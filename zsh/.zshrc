@@ -427,3 +427,7 @@ eval "$(uvx --generate-shell-completion zsh)"
 
 # for Kiro
 [[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/nukopy/.lmstudio/bin"
+# End of LM Studio CLI section
