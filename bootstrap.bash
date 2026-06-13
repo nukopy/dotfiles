@@ -72,7 +72,9 @@ make_symlinks_macos() {
 
   # for Claude Code
   ln -sf $HOME/Projects/dotfiles/claude/CLAUDE.md ~/.claude/CLAUDE.md
+  ln -sf $HOME/Projects/dotfiles/claude/settings.json ~/.claude/settings.json
   ln -sf $HOME/Projects/dotfiles/claude/mcp.json ~/.claude/mcp.json
+  ln -sf $HOME/Projects/dotfiles/claude/ccstatusline/settings.json ~/.config/ccstatusline/settings.json
 
   # for ~/.config/*
   mkdir -p ~/.config/nvim
