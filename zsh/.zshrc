@@ -290,8 +290,7 @@ alias codd="codex --dangerously-bypass-approvals-and-sandbox"
 alias coddr="codex --dangerously-bypass-approvals-and-sandbox -- --resume"
 
 # for Claude
-alias cldd="claude --mcp-config=$HOME/.claude/mcp.json --allow-dangerously-skip-permissions"
-alias clddr="claude --mcp-config=$HOME/.claude/mcp.json --allow-dangerously-skip-permissions --resume"
+alias claude="command claude --mcp-config=$HOME/.claude/mcp.json"
 
 ################################
 # other utility aliases
