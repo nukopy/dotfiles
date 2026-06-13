@@ -431,3 +431,8 @@ eval "$(uvx --generate-shell-completion zsh)"
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/nukopy/.lmstudio/bin"
 # End of LM Studio CLI section
+
+# >>>> Vagrant command completion (start)
+fpath=(/opt/vagrant/embedded/gems/gems/vagrant-2.4.9/contrib/zsh $fpath)
+compinit
+# <<<<  Vagrant command completion (end)
