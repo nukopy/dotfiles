@@ -31,6 +31,9 @@ export PATH="/usr/local/bin:$PATH"
 # for Docker
 export PATH="$HOME/.docker/bin:$PATH"
 
+# for mise (MUST run before settings of each language initialized)
+eval "$(mise activate zsh)"
+
 # for Rust
 . "$HOME/.cargo/env"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -378,9 +381,6 @@ eval "$(direnv hook zsh)"
 
 # GitHub CLI
 eval "$(gh completion -s zsh)"
-
-# for mise
-eval "$(mise activate zsh)"
 
 ############################################
 # zsh command completion
