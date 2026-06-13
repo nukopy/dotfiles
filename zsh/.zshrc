@@ -63,8 +63,12 @@ esac
 # for Java
 # XX にバージョン番号を入れる
 # export JAVA_HOME=`usr/libexec/java_home -v XX`
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+# export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+# export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include"
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home
+
+# Android
+export ANDROID_HOME="$HOME/Library/Android/sdk"
 
 # for the Dart/Flutter SDK
 export PATH="$HOME/SDKs/flutter/bin:$PATH"
