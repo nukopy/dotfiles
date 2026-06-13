@@ -1,0 +1,98 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "a1c29aeb-afba-497c-bd14-e50b0bc8ab40",
+        "type": "session-clock",
+        "color": "brightBlue"
+      },
+      {
+        "id": "14bc3782-e314-4180-b8f0-5552b9a22f80",
+        "type": "separator"
+      },
+      {
+        "id": "108889f6-0cea-442f-8e6f-e060aadff242",
+        "type": "git-root-dir",
+        "color": "brightCyan"
+      },
+      {
+        "id": "9a0290d4-c4e0-48b3-9535-f42976bca484",
+        "type": "custom-text",
+        "customText": " "
+      },
+      {
+        "id": "c65584ac-32c1-4680-9b70-72ebe1a1f5ad",
+        "type": "git-branch",
+        "color": "magenta"
+      },
+      {
+        "id": "4a5991f9-f0ec-45b2-9825-d45a90139192",
+        "type": "separator"
+      },
+      {
+        "id": "53b491f1-1bda-495f-828f-85dc670f132e",
+        "type": "git-changes",
+        "color": "brightBlack"
+      }
+    ],
+    [
+      {
+        "id": "99b6deb3-cf85-479e-b26a-319a5c4b84b7",
+        "type": "current-working-dir",
+        "color": "black"
+      }
+    ],
+    [
+      {
+        "id": "62cda8c2-eec9-4701-8d82-18bf20e1706f",
+        "type": "model",
+        "color": "yellow"
+      },
+      {
+        "id": "bcc18366-c1c9-4e19-ae88-5a1062d4892b",
+        "type": "separator"
+      },
+      {
+        "id": "4ad32c8f-e137-431b-829e-6b751815f3aa",
+        "type": "context-percentage",
+        "color": "green"
+      },
+      {
+        "id": "69280a62-7cd6-46bf-b71d-dede967f5606",
+        "type": "separator"
+      },
+      {
+        "id": "fe540140-a385-4e31-a334-1500a1879c0a",
+        "type": "tokens-input",
+        "color": "brightBlack"
+      },
+      {
+        "id": "8ca6d2c7-b054-47b0-a3cf-1c59f1bd050f",
+        "type": "separator"
+      },
+      {
+        "id": "550a32b6-8c66-4422-80f3-5823da7d4366",
+        "type": "tokens-output",
+        "color": "black"
+      },
+      {
+        "id": "3b2f3e81-b175-4437-b812-a7f1d7b21d5f",
+        "type": "separator"
+      }
+    ]
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [""],
+    "separatorInvertBackground": [false],
+    "startCaps": [],
+    "endCaps": [],
+    "autoAlign": false
+  }
+}
